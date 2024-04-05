@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer Assignment</title>
+</head>
+<body>
+
+<h1>Question and Answer Assignment</h1>
+
+<div class="qa-container">
+
+    <!-- Question 1 -->
+    <div class="question">
+        <h2>Question 1:</h2>
+        <p>Write a Python program to calculate the area of a rectangle using user input for length and width. Use the multiplication operator (*) to perform the calculation.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Calculate the area of a rectangle using user input for length and width
+            length = float(input("Enter the length of the rectangle: "))
+            width = float(input("Enter the width of the rectangle: "))
+            
+            # Calculate the area
+            area = length * width
+            
+            # Display the area
+            print(f"The area of the rectangle is {area:.2f} square units.")
+            </pre>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <h2>Question 2:</h2>
+        <p>Create a program that takes two numbers from the user and prints their division result. Handle the ZeroDivisionError exception if the second number is zero.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            try:
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+        
+            result = num1 / num2
+            print(f"The division result is: {result:.2f}")
+        except ZeroDivisionError:
+            print("Error: Cannot divide by zero.")        
+            </pre>
+    </div>
+ <!-- Question 3 -->
+    <div class="question">
+        <h2>Question 3:</h2>
+        <p>Write a Python program to find the maximum of three numbers using comparison operators.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+            num3 = float(input("Enter the third number: "))
+            
+            max_number = max(num1, num2, num3)
+            print(f"The maximum of the three numbers is: {max_number}")            
+            </pre>
+    </div>
+ <!-- Question 4 -->
+    <div class="question">
+        <h2>Question 4:</h2>
+        <p>Develop a program that swaps the values of two variables without using a temporary variable, using arithmetic operators.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+            
+            num1, num2 = num2, num1  # Swap values without a temporary variable
+            
+            print(f"After swapping: First number = {num1}, Second number = {num2}")            
+            </pre>
+    </div>
+ <!-- Question 5 -->
+    <div class="question">
+        <h2>Question 5:</h2>
+        <p>Implement a program to check if a given number is even or odd using the modulo operator (%).</p>
+    </div>
+    <div class="answer">
+        <pre>
+            number = int(input("Enter a number: "))
+
+            if number % 2 == 0:
+                print(f"{number} is an even number.")
+            else:
+                print(f"{number} is an odd number.")            
+            </pre>
+    </div>
+ <!-- Question 6 -->
+    <div class="question">
+        <h2>Question 6:</h2>
+        <p>Write a Python program to create a list of integers and print its data type.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # A# Create a list of integers
+    my_list = [1, 2, 3, 4, 5]
+    
+    # Print the data type of the list
+    print("Data type of the list:", type(my_list))           
+            </pre>
+    </div>
+ <!-- Question 7 -->
+    <div class="question">
+        <h2>Question 7:</h2>
+        <p>Develop a program that demonstrates the usage of the tuple data type in Python.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Create a tuple
+            my_tuple = (10, 20, 30)
+            
+            # Print the tuple
+            print("Tuple:", my_tuple)            
+            </pre>
+    </div>
+ <!-- Question 8 -->
+    <div class="question">
+        <h2>Question 8:</h2>
+        <p>Create a dictionary containing information about a person (name, age, city), and print its data type.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Create a dictionary
+            person_info = {
+                "name": "John",
+                "age": 30,
+                "city": "New York"
+            }
+            
+            # Print the data type of the dictionary
+            print("Data type of the dictionary:", type(person_info))            
+        </pre>
+    </div>
+ <!-- Question 9 -->
+    <div class="question">
+        <h2>Question 9:</h2>
+        <p>Write a program to show how sets are used in Python by performing set operations like union, intersection, and difference.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Create sets
+            set1 = {1, 2, 3}
+            set2 = {3, 4, 5}
+            
+            # Perform set operations
+            union_set = set1 | set2
+            intersection_set = set1 & set2
+            difference_set = set1 - set2
+            
+            # Print the results
+            print("Union:", union_set)
+            print("Intersection:", intersection_set)
+            print("Difference:", difference_set)            
+            </pre>
+    </div>
+ <!-- Question 10 -->
+    <div class="question">
+        <h2>Question 10:</h2>
+        <p>Implement a program that illustrates the usage of the boolean data type in Python.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Boolean variables
+            is_sunny = True
+            is_raining = False
+            
+            # Boolean expressions
+            temperature = 25
+            is_hot = temperature > 30
+            is_cold = temperature < 10
+            
+            # Boolean operations
+            has_money = True
+            has_time = False
+            can_buy = has_money and has_time
+            can_travel = has_money or has_time
+            cannot_stay_home = not has_time
+            
+            # Print the results
+            print("Is it sunny today?", is_sunny)
+            print("Is it raining today?", is_raining)
+            print("Is it hot?", is_hot)
+            print("Is it cold?", is_cold)
+            print("Can I buy something?", can_buy)
+            print("Can I travel?", can_travel)
+            print("Cannot stay at home?", cannot_stay_home)            
+            </pre>
+    </div>
+ <!-- Question 11 -->
+    <div class="question">
+        <h2>Question 11:</h2>
+        <p>Write a Python program to calculate the square of a given number.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Calculate the square of a given number using user input
+            number = float(input("Enter a number: "))
+            square = number ** 2
+            print(f"The square of the given number {number} is {square:.2f}")            
+            </pre>
+    </div>
+ <!-- Question 12 -->
+    <div class="question">
+        <h2>Question 12:</h2>
+        <p>Create a program that calculates the factorial of a given number using a loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Calculate the factorial of a given number using a loop
+            def factorial(n):
+                result = 1
+                for i in range(1, n + 1):
+                    result *= i
+                return result
+            
+            number = int(input("Enter a positive integer: "))
+            if number < 0:
+                print("Factorial is not defined for negative numbers.")
+            else:
+                print(f"The factorial of {number} is {factorial(number)}")            
+        </pre>
+    </div>
+ <!-- Question 13 -->
+    <div class="question">
+        <h2>Question 13:</h2>
+        <p>Develop a program to find the square root of a number using the math module.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            import math
+        # Find the square root of a number using the math module
+            number = float(input("Enter a positive number: "))
+            if number < 0:
+                print("Square root is not defined for negative numbers.")
+            else:
+                square_root = math.sqrt(number)
+                print(f"The square root of {number} is {square_root:.2f}")
+            </pre>
+    </div>
+ <!-- Question 14 -->
+    <div class="question">
+        <h2>Question 14:</h2>
+        <p>Implement a program that converts temperature from Celsius to Fahrenheit and vice versa.</p>
+    </div>
+    <div class="answer">
+        <pre>
+        def celsius_to_fahrenheit(celsius):
+            return (celsius * 9/5) + 32
+
+        def fahrenheit_to_celsius(fahrenheit):
+            return (fahrenheit - 32) * 5/9
+
+        temperature = float(input("Enter the temperature: "))
+        unit = input("Enter the unit (Celsius or Fahrenheit): ").lower()
+
+        if unit == "celsius":
+            converted_temp = celsius_to_fahrenheit(temperature)
+            print(f"{temperature:.2f}°C is equivalent to {converted_temp:.2f}°F")
+        elif unit == "fahrenheit":
+            converted_temp = fahrenheit_to_celsius(temperature)
+            print(f"{temperature:.2f}°F is equivalent to {converted_temp:.2f}°C")
+        else:
+            print("Invalid unit. Please enter either Celsius or Fahrenheit.")           
+            </pre>
+    </div>
+ <!-- Question 15 -->
+    <div class="question">
+        <h2>Question 15:</h2>
+        <p>Write a Python program to generate Fibonacci series up to a specified number of terms.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def generate_fibonacci(n):
+            fib_series = [0, 1]
+            while len(fib_series) < n:
+                next_term = fib_series[-1] + fib_series[-2]
+                fib_series.append(next_term)
+            return fib_series
+        
+        num_terms = int(input("Enter the number of terms for the Fibonacci series: "))
+        fibonacci_series = generate_fibonacci(num_terms)
+        print(f"Fibonacci series up to {num_terms} terms: {fibonacci_series}")        
+        </pre>
+    </div>
+ <!-- Question 16 -->
+    <div class="question">
+        <h2>Question 16:</h2>
+        <p>Write a program that takes user input as a string and converts it into an integer.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a number as a string: ")
+            try:
+                integer_value = int(user_input)
+                print(f"The integer value is: {integer_value}")
+            except ValueError:
+                print("Invalid input. Please enter a valid integer string.")
+            
+        </pre>
+    </div>
+ <!-- Question 17 -->
+    <div class="question">
+        <h2>Question 17:</h2>
+        <p>Create a program that converts a floating-point number into an integer.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            float_number = float(input("Enter a floating-point number: "))
+            integer_value = int(float_number)
+            print(f"The integer value of {float_number} is: {integer_value}")            
+        </pre>
+    </div>
+ <!-- Question 18 -->
+    <div class="question">
+        <h2>Question 18:</h2>
+        <p>Implement a program that converts a string representing a binary number into its decimal equivalent.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            binary_string = input("Enter a binary number as a string: ")
+            try:
+                decimal_value = int(binary_string, 2)
+                print(f"The decimal equivalent of {binary_string} is: {decimal_value}")
+            except ValueError:
+                print("Invalid input. Please enter a valid binary string.")
+        </pre>
+    </div>
+ <!-- Question 19 -->
+    <div class="question">
+        <h2>Question 19:</h2>
+        <p>Develop a program that converts an integer into a string and adds a specific prefix to it.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            integer_value = int(input("Enter an integer: "))
+            prefix = input("Enter a prefix: ")
+            prefixed_string = prefix + str(integer_value)
+            print(f"The prefixed string is: {prefixed_string}")                
+        </pre>
+    </div>
+ <!-- Question 20 -->
+    <div class="question">
+        <h2>Question 20:</h2>
+        <p>Write a Python program that demonstrates the use of type casting between different data types.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Type casting examples
+            num_str = "123"
+            num_int = int(num_str)
+            num_float = float(num_str)
+            num_bool = bool(num_str)  # Non-empty strings evaluate to True
+            
+            print(f"String to Integer: {num_int}")
+            print(f"String to Float: {num_float}")
+            print(f"String to Boolean: {num_bool}")            
+        </pre>
+    </div>
+    <!-- Question 21 -->
+    <div class="question">
+        <h2>Question 21:</h2>
+        <p>Write a Python program to concatenate two strings.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            string1 = input("Enter the first string: ")
+            string2 = input("Enter the second string: ")
+            result = string1 + " " + string2
+            print("Concatenated string:", result)
+            </pre>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question">
+        <h2>Question 22:</h2>
+        <p>Create a program that takes a string input from the user and prints it in reverse order.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string: ")
+            reversed_string = user_input[::-1]
+            print("Reversed string:", reversed_string)      
+            </pre>
+    </div>
+ <!-- Question 23 -->
+    <div class="question">
+        <h2>Question 23:</h2>
+        <p>Develop a program that counts the occurrences of a specific character in a given string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string: ")
+            character = input("Enter a character: ")
+            count = user_input.count(character)
+            print(f"The character '{character}' occurs {count} times in the string.")
+          
+            </pre>
+    </div>
+ <!-- Question 24 -->
+    <div class="question">
+        <h2>Question 24:</h2>
+        <p>Implement a program that checks if a given string is a palindrome or not.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string: ")
+            reversed_input = user_input[::-1]
+            if user_input == reversed_input:
+                print("The string is a palindrome.")
+            else:
+                print("The string is not a palindrome.")
+            </pre>
+    </div>
+ <!-- Question 25 -->
+    <div class="question">
+        <h2>Question 25:</h2>
+        <p>Write a Python program to remove all the leading whitespaces from a string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string: ")
+            trimmed_string = user_input.lstrip()
+            print("String with leading whitespaces removed:", trimmed_string)          
+            </pre>
+    </div>
+ <!-- Question 26 -->
+    <div class="question">
+        <h2>Question 26:</h2>
+        <p>Write a program to format a string with dynamic content using the .format() method.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            name = input("Enter your name: ")
+            age = int(input("Enter your age: "))
+            
+            formatted_string = "Hello, {}. You are {} years old.".format(name, age)
+            print(formatted_string)                     
+            </pre>
+    </div>
+ <!-- Question 27 -->
+    <div class="question">
+        <h2>Question 27:</h2>
+        <p>Create a program that utilizes f-strings to print out variables in a formatted string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            item = "apple"
+            quantity = 5
+
+            formatted_string = f"I have {quantity} {item}s."
+            print(formatted_string)
+            </pre>
+    </div>
+ <!-- Question 28 -->
+    <div class="question">
+        <h2>Question 28:</h2>
+        <p>Develop a program that formats a string to display a specific number of decimal places for a floating-point number.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            pi_value = 3.14159
+            decimal_places = 2
+
+            formatted_pi = f"Value of Pi (rounded to {decimal_places} decimal places): {pi_value:.{decimal_places}f}"
+            print(formatted_pi)           
+        </pre>
+    </div>
+ <!-- Question 29 -->
+    <div class="question">
+        <h2>Question 29:</h2>
+        <p>Implement a program that formats a string to include leading zeros for a given integer.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            number = 42
+            width = 5
+
+            formatted_number = f"Number with leading zeros: {number:0{width}d}"
+            print(formatted_number)           
+        </pre>
+    </div>
+ <!-- Question 30 -->
+    <div class="question">
+        <h2>Question 30:</h2>
+        <p>Write a Python program to display a multiline string with proper indentation using the triple quotes syntax.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            multiline_string = """
+            This is a multiline string.
+            It spans across multiple lines.
+            Proper indentation is maintained.
+            """
+            print(multiline_string)          
+        </pre>
+    </div>
+ <!-- Question 31 -->
+    <div class="question">
+        <h2>Question 31:</h2>
+        <p>Write a Python program to convert a string to uppercase.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            original_text = "convert to uppercase"
+            upper_text = original_text.upper()
+            print(upper_text)
+          
+            </pre>
+    </div>
+ <!-- Question 32 -->
+    <div class="question">
+        <h2>Question 32:</h2>
+        <p>Create a program that splits a string into a list of substrings based on a delimiter.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string with delimiters: ")
+            delimiter = input("Enter the delimiter: ")
+            substrings = user_input.split(delimiter)
+            print("Substrings:", substrings)          
+        </pre>
+    </div>
+ <!-- Question 33 -->
+    <div class="question">
+        <h2>Question 33:</h2>
+        <p>Develop a program that replaces all occurrences of a specified substring with another substring in a given string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            original_string = "Hello, world! Hello, Python!"
+            new_string = original_string.replace("Hello", "Hi")
+            print("Modified string:", new_string)
+            </pre>
+    </div>
+ <!-- Question 34 -->
+    <div class="question">
+        <h2>Question 34:</h2>
+        <p>Implement a program that checks if a string ends with a specific suffix.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string: ")
+            suffix = input("Enter the suffix: ")
+            if user_input.endswith(suffix):
+                print("The string ends with the specified suffix.")
+            else:
+                print("The string does not end with the specified suffix.")                     
+        </pre>
+    </div>
+ <!-- Question 35 -->
+    <div class="question">
+        <h2>Question 35:</h2>
+        <p>Write a Python program to find the index of the first occurrence of a character in a string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            user_input = input("Enter a string: ")
+            character = input("Enter a character: ")
+            try:
+                index = user_input.index(character)
+                print(f"The index of the first occurrence of '{character}' is: {index}")
+            except ValueError:
+                print(f"'{character}' is not found in the string.")      
+        </pre>
+    </div>
+ <!-- Question 36 -->
+    <div class="question">
+        <h2>Question 36:</h2>
+        <p>Write a Python program that demonstrates the usage of the newline escape character (\n).</p>
+    </div>
+    <div class="answer">
+        <pre>
+            print("Hello,\nWorld!") 
+        </pre>
+    </div>
+ <!-- Question 37 -->
+    <div class="question">
+        <h2>Question 37:</h2>
+        <p>Create a program that uses escape characters to print a string with quotes inside.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            print("She said, \"Hello!\"")           
+        </pre>
+    </div>
+ <!-- Question 38 -->
+    <div class="question">
+        <h2>Question 38:</h2>
+        <p>Develop a program that prints a string containing tabs (\t) to demonstrate its usage.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            print("Name\tAge\tCity")
+            print("John\t30\tNew York")
+        </pre>
+    </div>
+ <!-- Question 39 -->
+    <div class="question">
+        <h2>Question 39:</h2>
+        <p>Implement a program that uses the backslash () escape character to print directory paths.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            print("C:\\Users\\John\\Documents")              
+        </pre>
+    </div>
+ <!-- Question 40 -->
+    <div class="question">
+        <h2>Question 40:</h2>
+        <p>Write a Python program that prints a string containing a backslash () character.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            print("This is a double backslash: \\\\")           
+        </pre>
+    </div>
+    <!-- Repeat the above structure for additional questions and answers -->
+
+</div>
+
+</body>
+</html>

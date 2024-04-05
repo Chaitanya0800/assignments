@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer Assignment</title>
+</head>
+<body>
+
+<h1>Question and Answer Assignment</h1>
+
+<div class="qa-container">
+
+    <!-- Question 1 -->
+    <div class="question">
+        <h2>Question 1:</h2>
+        <p>Write a Python script that demonstrates the use of single-line comments.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # This is a single-line comment in Python
+    print("Hello, World!")  # This is another single-line comment
+    # The above line will print "Hello, World!" to the console</pre>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <h2>Question 2:</h2>
+        <p>Create a Python program that utilizes multi-line comments to describe the functionality of a function or a section of code.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    This program calculates the area of a rectangle.
+    It takes the length and width as input and prints the result.
+        # Input: Length and width of the rectangle
+            length = float(input("Enter the length: "))
+            width = float(input("Enter the width: "))
+        
+        # Calculate the area
+            area = length * width
+            
+        # Output: Display the area
+            print(f"The area of the rectangle is {area:.2f} square units.")
+            </pre>
+    </div>
+ <!-- Question 3 -->
+    <div class="question">
+        <h2>Question 3:</h2>
+        <p>Develop a Python script that declares variables of different data types such as integer, float, string, and boolean.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Declare variables of different data types
+        integer_var = 42  # An integer
+        float_var = 3.14  # A floating-point number
+        string_var = "Hello, World!"  # A string
+        boolean_var = True  # A boolean (True or False)
+            
+    # Print the values and data types of the variables
+        print(f"Integer variable: {integer_var} (Type: {type(integer_var)})")
+        print(f"Float variable: {float_var} (Type: {type(float_var)})")
+        print(f"String variable: {string_var} (Type: {type(string_var)})")
+        print(f"Boolean variable: {boolean_var} (Type: {type(boolean_var)})")
+            </pre>
+    </div>
+ <!-- Question 4 -->
+    <div class="question">
+        <h2>Question 4:</h2>
+        <p>Write a Python program that assigns values to variables with descriptive names indicating their purpose.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Assign values to variables with descriptive names indicating their purpose
+        employee_name = "John Doe"  # Name of the employee
+        employee_id = 12345  # Employee ID
+        hourly_rate = 25.50  # Hourly pay rate in dollars
+        hours_worked = 40  # Number of hours worked in a week
+            is_full_time = True  # Boolean indicating whether the employee is full-time
+            
+    # Print the values of the variables
+        print(f"Employee Name: {employee_name}")
+        print(f"Employee ID: {employee_id}")
+        print(f"Hourly Rate: ${hourly_rate:.2f}")
+        print(f"Hours Worked: {hours_worked} hours")
+        print(f"Full-Time Employee: {is_full_time}")
+            </pre>
+    </div>
+ <!-- Question 5 -->
+    <div class="question">
+        <h2>Question 5:</h2>
+        <p>Create a Python script that demonstrates the use of meaningful variable names following the PEP 8 guidelines.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # PEP 8 recommends using meaningful variable names that are descriptive and follow a consistent style.
+    # Below is an example demonstrating the use of meaningful variable names following PEP 8 guidelines.
+            
+        # Calculate the area of a rectangle
+            def calculate_rectangle_area(length, width):
+                Calculates the area of a rectangle.
+                Args:
+                    length (float): Length of the rectangle.
+                    width (float): Width of the rectangle.
+
+                Returns:
+                    float: The area of the rectangle.
+                """
+                area = length * width
+                return area
+            
+        # Example usage
+            rectangle_length = 5.0
+            rectangle_width = 3.0
+            rectangle_area = calculate_rectangle_area(rectangle_length, rectangle_width)
+            
+            print(f"The area of the rectangle with length {rectangle_length} and width {rectangle_width} is {rectangle_area:.2f} square units.")
+            </pre>
+    </div>
+ <!-- Question 6 -->
+    <div class="question">
+        <h2>Question 6:</h2>
+        <p>Implement a Python program where you assign multiple values to multiple variables in a single line.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Assign multiple values to multiple variables in a single line
+        a, b, c = 10, 20, 30
+            
+    # Print the values of the variables
+        print(f"Variable a: {a}")
+        print(f"Variable b: {b}")
+        print(f"Variable c: {c}")
+            Variable a: 10
+            Variable b: 20
+            Variable c: 30        
+            </pre>
+    </div>
+ <!-- Question 7 -->
+    <div class="question">
+        <h2>Question 7:</h2>
+        <p>Write a Python script to swap the values of two variables without using a temporary variable.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Swap the values of two variables without using a temporary variable
+        def swap_values(a, b):
+            a, b = b, a
+            return a, b
+            
+        # Example usage
+            x = 10
+            y = 20
+            
+            print(f"Before swapping: x = {x}, y = {y}")
+            
+            x, y = swap_values(x, y)
+            
+            print(f"After swapping: x = {x}, y = {y}")
+
+            Before swapping: x = 10, y = 20
+            After swapping: x = 20, y = 10
+
+            </pre>
+    </div>
+ <!-- Question 8 -->
+    <div class="question">
+        <h2>Question 8:</h2>
+        <p>Develop a Python program that accepts input from the user and assigns it to a variable.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Accept input from the user and assign it to a variable
+        user_input = input("Enter your name: ")
+
+    # Print a greeting message
+        print(f"Hello, {user_input}! Nice to meet you.")
+        </pre>
+    </div>
+ <!-- Question 9 -->
+    <div class="question">
+        <h2>Question 9:</h2>
+        <p>Create a Python script that performs arithmetic operations using variables and outputs the results.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Perform arithmetic operations using variables and output the results
+
+        # Declare variables
+            a = 10
+            b = 5
+            
+        # Perform arithmetic operations
+            sum_result = a + b
+            difference_result = a - b
+            product_result = a * b
+            quotient_result = a / b
+            
+        # Print the results
+            print(f"Sum: {sum_result}")
+            print(f"Difference: {difference_result}")
+            print(f"Product: {product_result}")
+            print(f"Quotient: {quotient_result:.2f}")
+
+            Sum: 15
+            Difference: 5
+            Product: 50
+            Quotient: 2.00
+            </pre>
+    </div>
+ <!-- Question 10 -->
+    <div class="question">
+        <h2>Question 10:</h2>
+        <p>Write a Python program that concatenates strings stored in different variables and outputs the concatenated string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+        # Declare variables with string values
+            first_name = "Chai"
+            last_name = "Chaitu"
+            
+        # Concatenate the first name and last name
+            full_name = first_name + " " + last_name
+            
+        # Print the concatenated string
+            print(f"Full Name: {full_name}")
+
+        Full Name: Chai Chaitu
+
+            </pre>
+    </div>
+ <!-- Question 11 -->
+    <div class="question">
+        <h2>Question 11:</h2>
+        <p>Develop a Python script that utilizes formatted strings to output variables along with descriptive text.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Utilize formatted strings to output variables along with descriptive text
+
+        # Declare variables
+            item_name = "Laptop"
+            price = 999.99
+            quantity = 2
+            
+        # Calculate total cost
+            total_cost = price * quantity
+            
+        # Print the details using formatted strings
+            print(f"Item: {item_name}")
+            print(f"Price per unit: ${price:.2f}")
+            print(f"Quantity: {quantity}")
+            print(f"Total cost: ${total_cost:.2f}")
+
+            Item: Laptop
+            Price per unit: $999.99
+            Quantity: 2
+            Total cost: $1999.98
+            </pre>
+    </div>
+ <!-- Question 12 -->
+    <div class="question">
+        <h2>Question 12:</h2>
+        <p>Implement a Python program that demonstrates the concept of global variables within functions.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    Accessing Global Variables
+        # Define a global variable
+        global_var = 42
+        
+        def access_global_variable():
+            # Access the global variable
+            print(f"Global variable value: {global_var}")
+        
+        # Call the function
+        access_global_variable()
+
+        Global variable value: 42
+
+    Modifying Global Variables
+        # Define a global variable
+            global_var = 42
+
+    def modify_global_variable():
+        # Access the global variable
+        print(f"Global variable value (before modification): {global_var}")
+
+        # Modify the global variable
+        global global_var
+        global_var = 100
+
+        # Access the modified global variable
+        print(f"Global variable value (after modification): {global_var}")
+
+    # Call the function
+    modify_global_variable()
+
+    # Access the global variable outside the function
+    print(f"Global variable value (outside function): {global_var}")
+
+        Global variable value (before modification): 42
+        Global variable value (after modification): 100
+        Global variable value (outside function): 100
+
+    Creating Global Variables Inside a Function
+        def dynamic_global_variable():
+        # Use the globals() function to define a new global variable
+        globals()["number"] = 42
+
+    # Call the function
+    dynamic_global_variable()
+
+    # Access the newly created global variable
+    print(f"New global variable value: {number}")
+
+    New global variable value: 42
+</pre>
+    </div>
+ <!-- Question 13 -->
+    <div class="question">
+        <h2>Question 13:</h2>
+        <p>Write a Python script that declares variables with the same name inside and outside a function to observe variable scope.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Declare a global variable
+            global_var = "I am a global variable"
+            
+            def demonstrate_variable_scope():
+                # Declare a local variable with the same name
+                local_var = "I am a local variable"
+            
+                # Access both variables
+                print(f"Inside the function: {global_var} | {local_var}")
+            
+            # Call the function
+            demonstrate_variable_scope()
+            
+            # Access the global variable outside the function
+            print(f"Outside the function: {global_var}")
+            # Uncomment the line below to observe an error (local_var is not accessible outside the function)
+            # print(f"Outside the function: {local_var}")
+
+        Inside the function: I am a global variable | I am a local variable
+        Outside the function: I am a global variable            
+            </pre>
+    </div>
+ <!-- Question 14 -->
+    <div class="question">
+        <h2>Question 14:</h2>
+        <p>Create a Python program that utilizes the global keyword to modify a global variable within a function.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            # Declare a global variable
+            global_var = "I am a global variable"
+            
+            def demonstrate_variable_scope():
+                # Declare a local variable with the same name
+                local_var = "I am a local variable"
+            
+                # Access both variables
+                print(f"Inside the function: {global_var} | {local_var}")
+            
+            # Call the function
+            demonstrate_variable_scope()
+            
+            # Access the global variable outside the function
+            print(f"Outside the function: {global_var}")
+
+        Inside the function: I am a global variable | I am a local variable
+        Outside the function: I am a global variable            
+            </pre>
+    </div>
+ <!-- Question 15 -->
+    <div class="question">
+        <h2>Question 15:</h2>
+        <p>Develop a Python script that uses local variables within a function and attempts to access them from outside the function.</p>
+    </div>
+    <div class="answer">
+        <pre>
+# Function that uses local variables
+def manipulate_variables():
+    local_var1 = 10
+    local_var2 = 20
+    print("Inside function - Local variable 1:", local_var1)
+    print("Inside function - Local variable 2:", local_var2)
+
+# Call the function
+manipulate_variables()
+
+# Attempt to access local variables outside the function
+try:
+    print("Outside function - Local variable 1:", local_var1)
+except NameError:
+    print("Local variable 1 is not accessible outside the function")
+    
+try:
+    print("Outside function - Local variable 2:", local_var2)
+except NameError:
+    print("Local variable 2 is not accessible outside the function")
+
+Inside function - Local variable 1: 10
+Inside function - Local variable 2: 20
+Local variable 1 is not accessible outside the function
+Local variable 2 is not accessible outside the function
+</pre>
+    </div>
+ <!-- Question 16 -->
+    <div class="question">
+        <h2>Question 16:</h2>
+        <p>Write a Python program that demonstrates the use of the nonlocal keyword to modify variables from an outer function within a nested function.</p>
+    </div>
+    <div class="answer">
+        <pre>
+# Outer function
+def outer_function():
+    outer_var = 10
+
+    # Nested function that modifies the outer variable using nonlocal keyword
+    def nested_function():
+        nonlocal outer_var
+        outer_var = 20
+        print("Inside nested function - Modified outer variable:", outer_var)
+
+    # Call the nested function
+    nested_function()
+
+    print("Inside outer function - Outer variable after modification:", outer_var)
+
+# Call the outer function
+outer_function()
+
+Inside nested function - Modified outer variable: 20
+Inside outer function - Outer variable after modification: 20
+</pre>
+    </div>
+ <!-- Question 17 -->
+    <div class="question">
+        <h2>Question 17:</h2>
+        <p>Create a Python script that shows the difference between mutable and immutable objects using variables.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Immutable object - integer
+    immutable_var = 10
+    print("Before modification - Immutable variable (integer):", immutable_var)
+
+    # Trying to modify the immutable variable
+    try:
+        immutable_var += 5
+        print("After modification - Immutable variable (integer):", immutable_var)
+    except Exception as e:
+        print("Error occurred:", e)
+
+    # Mutable object - list
+    mutable_list = [1, 2, 3]
+    print("\nBefore modification - Mutable list:", mutable_list)
+
+    # Modifying the mutable list
+    mutable_list.append(4)
+    print("After modification - Mutable list:", mutable_list)
+
+Before modification - Immutable variable (integer): 10
+After modification - Immutable variable (integer): 15
+
+Before modification - Mutable list: [1, 2, 3]
+After modification - Mutable list: [1, 2, 3, 4]
+</pre>
+    </div>
+ <!-- Question 18 -->
+    <div class="question">
+        <h2>Question 18:</h2>
+        <p>Implement a Python program that utilizes constants by declaring variables with uppercase names and assigning them fixed values.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Constants with fixed values
+    MAX_VALUE = 100
+    PI_VALUE = 3.14159
+    MESSAGE = "Hello, World!"
+
+    # Display the values of the constants
+    print("Max Value:", MAX_VALUE)
+    print("Value of Pi:", PI_VALUE)
+    print("Message:", MESSAGE)</pre>
+    </div>
+ <!-- Question 19 -->
+    <div class="question">
+        <h2>Question 19:</h2>
+        <p>Develop a Python script that demonstrates the concept of variable shadowing by declaring variables with the same name at different scopes.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Variable declared at the global scope
+    shadow_var = "Global"
+
+    # Function that declares a variable with the same name
+    def test_scope():
+        shadow_var = "Local"
+        print("Inside function - Shadowed variable:", shadow_var)
+
+    # Display the values before and after calling the function
+    print("Outside function - Shadowed variable:", shadow_var)
+    test_scope()
+    print("Outside function after calling the function - Shadowed variable:", shadow_var)
+
+Outside function - Shadowed variable: Global
+Inside function - Shadowed variable: Local
+Outside function after calling the function - Shadowed variable: Global    
+</pre>
+    </div>
+ <!-- Question 20 -->
+    <div class="question">
+        <h2>Question 20:</h2>
+        <p>Write a Python program that uses built-in functions to manipulate variables and outputs the results.</p>
+    </div>
+    <div class="answer">
+        <pre>
+    # Variables for manipulation
+    num_list = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+    string_var = "Hello, World!"
+    dictionary_var = {"A": 1, "B": 2, "C": 3}
+
+    # Using built-in functions to manipulate variables
+    # List manipulation
+    sorted_list = sorted(num_list)
+    list_sum = sum(num_list)
+
+    # String manipulation
+    upper_string = string_var.upper()
+    string_length = len(string_var)
+
+    # Dictionary manipulation
+    keys = dictionary_var.keys()
+    values = dictionary_var.values()
+
+    # Outputting the results
+    print("Sorted List:", sorted_list)
+    print("Sum of List Elements:", list_sum)
+    print("Uppercase String:", upper_string)
+    print("Length of String:", string_length)
+    print("Keys in Dictionary:", keys)
+    print("Values in Dictionary:", values)
+
+Sorted List: [1, 1, 2, 3, 4, 5, 5, 6, 9]
+Sum of List Elements: 36
+
+Uppercase String: HELLO, WORLD!
+Length of String: 13
+
+Keys in Dictionary: dict_keys(['A', 'B', 'C'])
+Values in Dictionary: dict_values([1, 2, 3])
+</pre>
+    </div>
+    <!-- Repeat the above structure for additional questions and answers -->
+
+</div>
+
+</body>
+</html>
