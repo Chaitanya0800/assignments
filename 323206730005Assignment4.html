@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer Assignment</title>
+</head>
+<body>
+
+<h1>Question and Answer Assignment</h1>
+
+<div class="qa-container">
+
+    <!-- Question 1 -->
+    <div class="question">
+        <h2>Question 1:</h2>
+        <p>Write a Python program that takes a number as input and prints "Positive" if it's greater than zero, "Negative" if it's less than zero, and "Zero" if it's equal to zero.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num = float(input("Enter a number: "))
+            if num > 0:
+                print("Positive number")
+            elif num == 0:
+                print("Zero")
+            else:
+                print("Negative number")            
+            </pre>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <h2>Question 2:</h2>
+        <p>Write a Python program that takes two numbers as input and prints the maximum of the two.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+            print("Maximum:", max(num1, num2))                   
+            </pre>
+    </div>
+ <!-- Question 3 -->
+    <div class="question">
+        <h2>Question 3:</h2>
+        <p>Write a Python program that takes three numbers as input and prints them in ascending order.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+            num3 = float(input("Enter the third number: "))
+            sorted_nums = sorted([num1, num2, num3])
+            print("Numbers in ascending order:", sorted_nums)                             
+            </pre>
+    </div>
+ <!-- Question 4 -->
+    <div class="question">
+        <h2>Question 4:</h2>
+        <p>Write a Python program that takes a year as input and prints "Leap year" if it's divisible by 4 and not divisible by 100, or if it's divisible by 400. Otherwise, print "Not a leap year".</p>
+    </div>
+    <div class="answer">
+        <pre>
+            year = int(input("Enter a year: "))
+            if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+                print("Leap year")
+            else:
+                print("Not a leap year")                              
+            </pre>
+    </div>
+ <!-- Question 5 -->
+    <div class="question">
+        <h2>Question 5:</h2>
+        <p>Write a Python program that takes a number as input and checks if it's odd or even. If it's odd, print "Odd number", otherwise print "Even number".</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num = int(input("Enter a number: "))
+            if num % 2 == 0:
+                print("Even number")
+            else:
+                print("Odd number")                              
+            </pre>
+    </div>
+ <!-- Question 6 -->
+    <div class="question">
+        <h2>Question 6:</h2>
+        <p>Write a Python program that takes a character as input and prints "Vowel" if it's a vowel, and "Consonant" otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            char = input("Enter a character: ").lower()
+            if char in 'aeiou':
+                print("Vowel")
+            else:
+                print("Consonant")                                     
+            </pre>
+    </div>
+ <!-- Question 7 -->
+    <div class="question">
+        <h2>Question 7:</h2>
+        <p>Write a Python program that takes three numbers as input and prints the minimum of the three.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+            num3 = float(input("Enter the third number: "))
+            print("Minimum:", min(num1, num2, num3))                           
+            </pre>
+    </div>
+ <!-- Question 8 -->
+    <div class="question">
+        <h2>Question 8:</h2>
+        <p>Write a Python program that takes a number as input and checks if it's a prime number. If it's prime, print "Prime number", otherwise print "Not a prime number".</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_prime(n):
+            if n <= 1:
+                return False
+            for i in range(2, int(n**0.5) + 1):
+                if n % i == 0:
+                    return False
+            return True
+        
+        num = int(input("Enter a number: "))
+        if is_prime(num):
+            print("Prime number")
+        else:
+            print("Not a prime number")                  
+        </pre>
+    </div>
+ <!-- Question 9 -->
+    <div class="question">
+        <h2>Question 9:</h2>
+        <p>Write a Python program that takes a student's marks as input and prints the corresponding grade based on the following criteria: A for marks >= 90, B for marks >= 80, C for marks >= 70, D for marks >= 60, and F for marks < 60./p>
+    </div>
+    <div class="answer">
+        <pre>
+            marks = float(input("Enter student's marks: "))
+            if marks >= 90:
+                print("Grade: A")
+            elif marks >= 80:
+                print("Grade: B")
+            elif marks >= 70:
+                print("Grade: C")
+            elif marks >= 60:
+                print("Grade: D")
+            else:
+                print("Grade: F")                             
+            </pre>
+    </div>
+ <!-- Question 10 -->
+    <div class="question">
+        <h2>Question 10:</h2>
+        <p>Write a Python program that takes a string as input and checks if it's a palindrome. If it's a palindrome, print "Palindrome", otherwise print "Not a palindrome".</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_palindrome(s):
+            return s == s[::-1]
+        
+        word = input("Enter a string: ").lower()
+        if is_palindrome(word):
+            print("Palindrome")
+        else:
+            print("Not a palindrome")                      
+            </pre>
+    </div>
+ <!-- Question 11 -->
+    <div class="question">
+        <h2>Question 11:</h2>
+        <p>Write a Python program that prints the numbers from 1 to 10 using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            n = 1
+            while n <= 10:
+                print(n, end=' ')
+                n += 1                            
+            </pre>
+    </div>
+ <!-- Question 12 -->
+    <div class="question">
+        <h2>Question 12:</h2>
+        <p>Write a Python program that takes a number as input and prints its multiplication table using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            num = int(input("Enter a number: "))
+            i = 1
+            while i <= 10:
+                result = num * i
+                print(f"{num} x {i} = {result}")
+                i += 1                           
+        </pre>
+    </div>
+ <!-- Question 13 -->
+    <div class="question">
+        <h2>Question 13:</h2>
+        <p>Write a Python program that takes a number as input and prints the factorial of that number using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def factorial(n):
+            result = 1
+            while n > 0:
+                result *= n
+                n -= 1
+            return result
+        
+        num = int(input("Enter a number: "))
+        print(f"Factorial of {num} is {factorial(num)}")              
+            </pre>
+    </div>
+ <!-- Question 14 -->
+    <div class="question">
+        <h2>Question 14:</h2>
+        <p>Write a Python program that takes a number as input and prints the Fibonacci series up to that number using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def fibonacci(n):
+            fib_list = [0, 1]
+            while len(fib_list) < n:
+                next_fib = fib_list[-1] + fib_list[-2]
+                fib_list.append(next_fib)
+            return fib_list
+        
+        num = int(input("Enter a number: "))
+        print(f"Fibonacci series up to {num}: {fibonacci(num)}")                     
+            </pre>
+    </div>
+ <!-- Question 15 -->
+    <div class="question">
+        <h2>Question 15:</h2>
+        <p>Write a Python program that takes a number as input and checks if it's a prime number using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_prime(n):
+            if n <= 1:
+                return False
+            i = 2
+            while i * i <= n:
+                if n % i == 0:
+                    return False
+                i += 1
+            return True
+        
+        num = int(input("Enter a number: "))
+        if is_prime(num):
+            print("Prime number")
+        else:
+            print("Not a prime number")                   
+        </pre>
+    </div>
+ <!-- Question 16 -->
+    <div class="question">
+        <h2>Question 16:</h2>
+        <p>Write a Python program that takes a list of numbers as input and prints the sum of all the numbers using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def sum_of_numbers(num_list):
+            total = 0
+            i = 0
+            while i < len(num_list):
+                total += num_list[i]
+                i += 1
+            return total
+        
+        numbers = [int(x) for x in input("Enter a list of numbers (space-separated): ").split()]
+        print(f"Sum of numbers: {sum_of_numbers(numbers)}")              
+        </pre>
+    </div>
+ <!-- Question 17 -->
+    <div class="question">
+        <h2>Question 17:</h2>
+        <p>Write a Python program that takes a number as input and prints its square root using Newton's method and a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def square_root(n):
+            guess = n / 2
+            while abs(guess * guess - n) > 1e-6:
+                guess = 0.5 * (guess + n / guess)
+            return guess
+        
+        num = float(input("Enter a positive number: "))
+        if num >= 0:
+            print(f"Square root of {num} is approximately {square_root(num):.6f}")
+        else:
+            print("Please enter a positive number.")                         
+        </pre>
+    </div>
+ <!-- Question 18 -->
+    <div class="question">
+        <h2>Question 18:</h2>
+        <p>Write a Python program that takes a number as input and prints its binary representation using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def decimal_to_binary(n):
+            binary_str = ""
+            while n > 0:
+                binary_str = str(n % 2) + binary_str
+                n //= 2
+            return binary_str
+        
+        num = int(input("Enter a positive integer: "))
+        print(f"Binary representation of {num}: {decimal_to_binary(num)}")                
+        </pre>
+    </div>
+ <!-- Question 19 -->
+    <div class="question">
+        <h2>Question 19:</h2>
+        <p>Write a Python program that takes a number as input and prints the reverse of that number using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def reverse_number(n):
+            reversed_num = 0
+            while n > 0:
+                digit = n % 10
+                reversed_num = reversed_num * 10 + digit
+                n //= 10
+            return reversed_num
+        
+        num = int(input("Enter a positive integer: "))
+        print(f"Reverse of {num}: {reverse_number(num)}")                       
+        </pre>
+    </div>
+ <!-- Question 20 -->
+    <div class="question">
+        <h2>Question 20:</h2>
+        <p>Write a Python program that takes a number as input and checks if it's a palindrome using a while loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_palindrome(n):
+            original = n
+            reversed_num = 0
+            while n > 0:
+                digit = n % 10
+                reversed_num = reversed_num * 10 + digit
+                n //= 10
+            return original == reversed_num
+        
+        num = int(input("Enter a positive integer: "))
+        if is_palindrome(num):
+            print("Palindrome")
+        else:
+            print("Not a palindrome")                          
+        </pre>
+    </div>
+    <!-- Question 21 -->
+    <div class="question">
+        <h2>Question 21:</h2>
+        <p>Write a Python program that prints the numbers from 1 to 10 using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            for num in range(1, 11):
+            print(num, end=' ')              
+            </pre>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question">
+        <h2>Question 22:</h2>
+        <p>Write a Python program that takes a list of numbers as input and prints the sum of all the numbers using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def sum_of_numbers(num_list):
+            total = 0
+            for num in num_list:
+                total += num
+            return total
+        
+        numbers = [int(x) for x in input("Enter a list of numbers (space-separated): ").split()]
+        print(f"Sum of numbers: {sum_of_numbers(numbers)}")                     
+            </pre>
+    </div>
+ <!-- Question 23 -->
+    <div class="question">
+        <h2>Question 23:</h2>
+        <p>Write a Python program that takes a list of numbers as input and prints the product of all the numbers using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def product_of_numbers(num_list):
+            result = 1
+            for num in num_list:
+                result *= num
+            return result
+        
+        numbers = [int(x) for x in input("Enter a list of numbers (space-separated): ").split()]
+        print(f"Product of numbers: {product_of_numbers(numbers)}")               
+            </pre>
+    </div>
+ <!-- Question 24 -->
+    <div class="question">
+        <h2>Question 24:</h2>
+        <p>Write a Python program that takes a string as input and counts the number of vowels using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def count_vowels(s):
+            vowels = "aeiouAEIOU"
+            count = 0
+            for char in s:
+                if char in vowels:
+                    count += 1
+            return count
+        
+        user_input = input("Enter a string: ")
+        print(f"Number of vowels: {count_vowels(user_input)}")              
+            </pre>
+    </div>
+ <!-- Question 25 -->
+    <div class="question">
+        <h2>Question 25:</h2>
+        <p>Write a Python program that takes a list of strings as input and prints the longest string using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def find_longest_string(lst):
+            longest = ""
+            for item in lst:
+                if len(item) > len(longest):
+                    longest = item
+            return longest
+        
+        string_list = ["apple", "banana", "watermelon", "orange"]
+        longest_string = find_longest_string(string_list)
+        print(f"Longest string: {longest_string}")                       
+            </pre>
+    </div>
+ <!-- Question 26 -->
+    <div class="question">
+        <h2>Question 26:</h2>
+        <p>Write a Python program that takes a string as input and prints its reverse using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def reverse_string(s):
+            reversed_str = ""
+            for char in s:
+                reversed_str = char + reversed_str
+            return reversed_str
+        
+        user_input = input("Enter a string: ")
+        print(f"Reversed string: {reverse_string(user_input)}")                              
+            </pre>
+    </div>
+ <!-- Question 27 -->
+    <div class="question">
+        <h2>Question 27:</h2>
+        <p>Write a Python program that takes a number as input and prints the factorial of that number using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def factorial(n):
+            result = 1
+            for i in range(1, n + 1):
+                result *= i
+            return result
+        
+        num = int(input("Enter a number: "))
+        print(f"Factorial of {num}: {factorial(num)}")            
+            </pre>
+    </div>
+ <!-- Question 28 -->
+    <div class="question">
+        <h2>Question 28:</h2>
+        <p>Write a Python program that takes a list of numbers as input and prints only the even numbers using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def print_even_numbers(num_list):
+            for num in num_list:
+                if num % 2 == 0:
+                    print(num, end=' ')
+        
+        numbers = [int(x) for x in input("Enter a list of numbers (space-separated): ").split()]
+        print("Even numbers:")
+        print_even_numbers(numbers)                       
+        </pre>
+    </div>
+ <!-- Question 29 -->
+    <div class="question">
+        <h2>Question 29:</h2>
+        <p>Write a Python program that takes a list of strings as input and prints all the strings with length greater than 5 using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def print_long_strings(str_list):
+            for string in str_list:
+                if len(string) > 5:
+                    print(string)
+        
+        strings = input("Enter a list of strings (space-separated): ").split()
+        print("Strings with length greater than 5:")
+        print_long_strings(strings)                       
+        </pre>
+    </div>
+ <!-- Question 30 -->
+    <div class="question">
+        <h2>Question 30:</h2>
+        <p>Write a Python program that takes a list of numbers as input and prints the Fibonacci series up to that number using a for loop.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def fibonacci(n):
+            fib_list = [0, 1]
+            for i in range(2, n):
+                next_fib = fib_list[-1] + fib_list[-2]
+                fib_list.append(next_fib)
+            return fib_list
+        
+        num = int(input("Enter a number: "))
+        print(f"Fibonacci series up to {num}: {fibonacci(num)}")                      
+        </pre>
+    </div>
+ <!-- Question 31 -->
+    <div class="question">
+        <h2>Question 31:</h2>
+        <p>Write a Python function add that takes two numbers as input and returns their sum.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def add(a, b):
+            return a + b              
+            </pre>
+    </div>
+ <!-- Question 32 -->
+    <div class="question">
+        <h2>Question 32:</h2>
+        <p>Write a Python function multiply that takes two numbers as input and returns their product.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def multiply(a, b):
+            return a * b                      
+        </pre>
+    </div>
+ <!-- Question 33 -->
+    <div class="question">
+        <h2>Question 33:</h2>
+        <p>Write a Python function power that takes a base and an exponent as input and returns the result of base raised to the exponent.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def power(base, exponent):
+            return base ** exponent               
+            </pre>
+    </div>
+ <!-- Question 34 -->
+    <div class="question">
+        <h2>Question 34:</h2>
+        <p>Write a Python function factorial that takes a number as input and returns its factorial.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def factorial(n):
+            result = 1
+            for i in range(1, n + 1):
+                result *= i
+            return result                               
+        </pre>
+    </div>
+ <!-- Question 35 -->
+    <div class="question">
+        <h2>Question 35:</h2>
+        <p>Write a Python function is_prime that takes a number as input and returns True if it's prime, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_prime(n):
+            if n <= 1:
+                return False
+            for i in range(2, int(n**0.5) + 1):
+                if n % i == 0:
+                    return False
+            return True                    
+        </pre>
+    </div>
+ <!-- Question 36 -->
+    <div class="question">
+        <h2>Question 36:</h2>
+        <p>Write a Python function reverse_string that takes a string as input and returns its reverse.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def reverse_string(s):
+            return s[::-1]               
+        </pre>
+    </div>
+ <!-- Question 37 -->
+    <div class="question">
+        <h2>Question 37:</h2>
+        <p>Write a Python function count_vowels that takes a string as input and returns the number of vowels in the string.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def count_vowels(s):
+            vowels = "aeiouAEIOU"
+            count = 0
+            for char in s:
+                if char in vowels:
+                    count += 1
+            return count                    
+        </pre>
+    </div>
+ <!-- Question 38 -->
+    <div class="question">
+        <h2>Question 38:</h2>
+        <p>Write a Python function average that takes a list of numbers as input and returns their average.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def average(num_list):
+            return sum(num_list) / len(num_list)            
+        </pre>
+    </div>
+ <!-- Question 39 -->
+    <div class="question">
+        <h2>Question 39:</h2>
+        <p>Write a Python function max_element that takes a list of numbers as input and returns the maximum element.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def max_element(num_list):
+            return max(num_list)                 
+        </pre>
+    </div>
+ <!-- Question 40 -->
+    <div class="question">
+        <h2>Question 40:</h2>
+        <p>Write a Python function sum_of_squares that takes a list of numbers as input and returns the sum of squares of all the numbers.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def sum_of_squares(num_list):
+            return sum(x**2 for x in num_list)                      
+        </pre>
+    </div>
+ <!-- Question 41 -->
+ <div class="question">
+    <h2>Question 41:</h2>
+    <p>Write a Python program that takes a dictionary as input and returns a new dictionary containing only the key-value pairs where the value is an integer.</p>
+</div>
+<div class="answer">
+    <pre>
+        num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        even_numbers = list(filter(lambda x: x % 2 == 0, num_list))
+        print(even_numbers)           
+        </pre>
+</div>
+<!-- Question 42 -->
+<div class="question">
+    <h2>Question 42:</h2>
+    <p>Write a Python function merge_dicts that takes two dictionaries as input and returns a new dictionary containing all the key-value pairs from both dictionaries.</p>
+</div>
+<div class="answer">
+    <pre>
+        string_list = ["apple", "banana", "cherry", "date"]
+        lengths = list(map(lambda s: len(s), string_list))
+        print(lengths)                   
+    </pre>
+</div>
+<!-- Question 43 -->
+<div class="question">
+    <h2>Question 43:</h2>
+    <p>Write a Python program that takes a list of dictionaries as input, where each dictionary contains information about a student (name, age, grade), and returns a new dictionary containing only the students who passed (grade >= 60).</p>
+</div>
+<div class="answer">
+    <pre>
+        person_list = [("Alice", 25), ("Bob", 30), ("Charlie", 22)]
+        names = list(map(lambda p: p[0], person_list))
+        print(names)           
+        </pre>
+</div>
+<!-- Question 44 -->
+<div class="question">
+    <h2>Question 44:</h2>
+    <p>Write a Python function dict_frequency that takes a list of strings as input and returns a dictionary where the keys are the unique words in the list, and the values are the frequencies of each word.</p>
+</div>
+<div class="answer">
+    <pre>
+        num_list = [1, 2, 3, 4, 5]
+        squares = list(map(lambda x: x**2, num_list))
+        print(squares)                          
+    </pre>
+</div>
+<!-- Question 45 -->
+<div class="question">
+    <h2>Question 45:</h2>
+    <p>Write a Python program that takes a dictionary as input and returns a new dictionary containing the keys and values swapped.</p>
+</div>
+<div class="answer">
+    <pre>
+        string_list = ["apple", "banana", "cherry", "date", "elephant"]
+        long_strings = list(filter(lambda s: len(s) > 5, string_list))
+        print(long_strings)               
+    </pre>
+</div>
+<!-- Question 46 -->
+<div class="question">
+    <h2>Question 46:</h2>
+    <p>Write a Python function dict_merge_values that takes two dictionaries as input and returns a new dictionary containing the keys from both dictionaries, with the values merged into a single list.</p>
+</div>
+<div class="answer">
+    <pre>
+        student_scores = [("Alice", 95), ("Bob", 88), ("Charlie", 92), ("David", 78)]
+        top_students = list(filter(lambda s: s[1] > 90, student_scores))
+        names = list(map(lambda s: s[0], top_students))
+        print(names)            
+    </pre>
+</div>
+<!-- Question 47 -->
+<div class="question">
+    <h2>Question 47:</h2>
+    <p>Write a Python program that takes a list of dictionaries as input, where each dictionary contains information about a person (name, age, city), and returns a new dictionary containing the names as keys and the ages as values.</p>
+</div>
+<div class="answer">
+    <pre>
+        def is_prime(n):
+        if n <= 1:
+            return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+    
+    num_list = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    prime_numbers = list(filter(is_prime, num_list))
+    print(prime_numbers)               
+    </pre>
+</div>
+<!-- Question 48 -->
+<div class="question">
+    <h2>Question 48:</h2>
+    <p>Write a Python function dict_remove_empty that takes a dictionary as input and returns a new dictionary containing only the key-value pairs where the value is not empty.</p>
+</div>
+<div class="answer">
+    <pre>
+        string_list = ["apple", "banana", "cherry", "date", "elephant"]
+        sorted_strings = sorted(string_list, key=lambda s: len(s))
+        print(sorted_strings)          
+    </pre>
+</div>
+<!-- Question 49 -->
+<div class="question">
+    <h2>Question 49:</h2>
+    <p>Write a Python program that takes a list of dictionaries as input, where each dictionary contains information about a product (name, price, quantity), and returns the total cost of all the products.</p>
+</div>
+<div class="answer">
+    <pre>
+        employee_salaries = [("Alice", 60000), ("Bob", 55000), ("Charlie", 48000), ("David", 72000)]
+        high_earners = list(filter(lambda e: e[1] > 50000, employee_salaries))
+        names = list(map(lambda e: e[0], high_earners))
+        print(names)                  
+    </pre>
+</div>
+<!-- Question 50 -->
+<div class="question">
+    <h2>Question 50:</h2>
+    <p>Write a Python function dict_combine_lists that takes two dictionaries as input, where each dictionary contains lists as values, and returns a new dictionary containing the keys from both dictionaries, with the lists concatenated.</p>
+</div>
+<div class="answer">
+    <pre>
+        num_list = [9, 12, 15, 18, 21, 24, 27, 30]
+        divisible_by_3 = list(filter(lambda x: x % 3 == 0, num_list))
+        print(divisible_by_3)                     
+    </pre>
+</div>
+    <!-- Repeat the above structure for additional questions and answers -->
+
+</div>
+
+</body>
+</html>

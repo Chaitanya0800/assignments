@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer Assignment</title>
+</head>
+<body>
+
+<h1>Question and Answer Assignment</h1>
+
+<div class="qa-container">
+
+    <!-- Question 1 -->
+    <div class="question">
+        <h2>Question 1:</h2>
+        <p>Write a Python function is_even that takes an integer as input and returns True if the number is even, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_even(number: int) -> bool:
+            Determines whether the given number is even.
+        Args:
+            number (int): The input integer.
+            Returns:
+        bool: True if the number is even, False otherwise.
+                return number % 2 == 0
+
+            # Example usage:
+            print(is_even(10))  # Output: True
+            print(is_even(7))   # Output: False
+
+            </pre>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <h2>Question 2:</h2>
+        <p>Write a Python program that takes a list of integers as input and returns True if all the numbers are even, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def all_even(numbers: list) -> bool:
+    for num in numbers:
+        if not is_even(num):
+            return False
+    return True
+
+            # Example usage:
+            my_list = [2, 4, 6, 8]
+            print(all_even(my_list))  # Output: True    
+            
+            def all_even(numbers: list) -> bool:
+            return all(is_even(num) for num in numbers)
+        
+        # Example usage:
+        my_list = [2, 4, 6, 8]
+        print(all_even(my_list))  # Output: True        
+            </pre>
+    </div>
+ <!-- Question 3 -->
+    <div class="question">
+        <h2>Question 3:</h2>
+        <p>Write a Python program that checks if a given string is a palindrome (reads the same forwards and backwards). Return True if it is, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_palindrome(s: str) -> bool:
+            return s == s[::-1]
+        
+        # Example usage:
+        print(is_palindrome("racecar"))  # Output: True
+        print(is_palindrome("hello"))    # Output: False                   
+            </pre>
+    </div>
+ <!-- Question 4 -->
+    <div class="question">
+        <h2>Question 4:</h2>
+        <p>Write a Python function is_divisible_by_all that takes a list of integers and a divisor as input, and returns True if all the numbers in the list are divisible by the divisor, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_divisible_by_all(numbers: list, divisor: int) -> bool:
+            return all(num % divisor == 0 for num in numbers)
+        
+        # Example usage:
+        my_list = [10, 20, 30, 40]
+        divisor = 5
+        print(is_divisible_by_all(my_list, divisor))  # Output: True                   
+            </pre>
+    </div>
+ <!-- Question 5 -->
+    <div class="question">
+        <h2>Question 5:</h2>
+        <p>Write a Python program that simulates a coin flip. Define a function flip_coin() that returns 'Heads' or 'Tails' randomly.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            import random
+
+            def flip_coin() -> str:
+                return random.choice(["Heads", "Tails"])
+            
+            # Example usage:
+            print(flip_coin())  # Output: Either 'Heads' or 'Tails'                      
+            </pre>
+    </div>
+ <!-- Question 6 -->
+    <div class="question">
+        <h2>Question 6:</h2>
+        <p>Write a Python program that checks if a given year is a leap year. Return True if it is, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_leap_year(year: int) -> bool:
+            return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+        
+        # Example usage:
+        print(is_leap_year(2024))  # Output: True
+        print(is_leap_year(2023))  # Output: False               
+            </pre>
+    </div>
+ <!-- Question 7 -->
+    <div class="question">
+        <h2>Question 7:</h2>
+        <p>Write a Python function has_duplicates that takes a list as input and returns True if the list contains any duplicate elements, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def has_duplicates(my_list: list) -> bool:
+            return len(my_list) != len(set(my_list))
+        
+        # Example usage:
+        my_list = [1, 2, 3, 2, 4]
+        print(has_duplicates(my_list))  # Output: True                 
+            </pre>
+    </div>
+ <!-- Question 8 -->
+    <div class="question">
+        <h2>Question 8:</h2>
+        <p>Write a Python program that simulates a simple calculator. Define functions for addition, subtraction, multiplication, and division. Prompt the user to choose an operation and input two numbers.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def add(a: float, b: float) -> float:
+            return a + b
+        
+        def subtract(a: float, b: float) -> float:
+            return a - b
+        
+        def multiply(a: float, b: float) -> float:
+            return a * b
+        
+        def divide(a: float, b: float) -> float:
+            return a / b
+        
+        # Example usage:
+        operation = input("Choose an operation (+, -, *, /): ")
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+                         
+        </pre>
+    </div>
+ <!-- Question 9 -->
+    <div class="question">
+        <h2>Question 9:</h2>
+        <p>Write a Python function is_power_of_two that takes an integer as input and returns True if the number is a power of two, and False otherwise./p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_power_of_two(n: int) -> bool:
+            """
+            Determines whether the given number is a power of two.
+        
+            Args:
+                n (int): The input integer.
+        
+            Returns:
+                bool: True if the number is a power of two, False otherwise.
+            """
+            return (n != 0) and (n & (n - 1) == 0)
+        
+        # Example usage:
+        print(is_power_of_two(16))  # Output: True
+        print(is_power_of_two(7))   # Output: False                   
+            </pre>
+    </div>
+ <!-- Question 10 -->
+    <div class="question">
+        <h2>Question 10:</h2>
+        <p>Write a Python program that takes a list of strings as input and returns True if all the strings are non-empty, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def all_non_empty(strings: list) -> bool:
+            """
+            Determines whether all strings in the given list are non-empty.
+        
+            Args:
+                strings (list): List of strings.
+        
+            Returns:
+                bool: True if all strings are non-empty, False otherwise.
+            """
+            return all(string for string in strings)
+        
+        # Example usage:
+        my_list = ["hello", "world", "Python"]
+        print(all_non_empty(my_list))  # Output: True
+        
+        empty_list = ["", "", ""]
+        print(all_non_empty(empty_list))  # Output: False                 
+            </pre>
+    </div>
+ <!-- Question 11 -->
+    <div class="question">
+        <h2>Question 11:</h2>
+        <p>Write a Python program that takes a list of strings as input and returns a new list with the strings sorted by length (shortest to longest).</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def sort_strings_by_length(strings):
+            """
+            Sorts a list of strings by length (shortest to longest).
+        
+            Args:
+                strings (list): List of strings.
+        
+            Returns:
+                list: Sorted list of strings.
+            """
+            return sorted(strings, key=len)
+        
+        # Example usage:
+        my_strings = ["apple", "banana", "grape", "orange", "kiwi"]
+        sorted_strings = sort_strings_by_length(my_strings)
+        print(sorted_strings)                 
+            </pre>
+    </div>
+ <!-- Question 12 -->
+    <div class="question">
+        <h2>Question 12:</h2>
+        <p>Write a Python function find_max that takes a list of numbers as input and returns the maximum value in the list.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def find_max(numbers):
+            """
+            Finds the maximum value in a list of numbers.
+        
+            Args:
+                numbers (list): List of numbers.
+        
+            Returns:
+                float or int: Maximum value.
+            """
+            return max(numbers)
+        
+        # Example usage:
+        my_numbers = [10, 25, 7, 42, 18]
+        max_value = find_max(my_numbers)
+        print(f"The maximum value is: {max_value}")                 
+        </pre>
+    </div>
+ <!-- Question 13 -->
+    <div class="question">
+        <h2>Question 13:</h2>
+        <p>Write a Python program that takes two lists as input and returns True if they have at least one common element, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def has_common_element(list1, list2):
+            """
+            Checks if two lists have at least one common element.
+        
+            Args:
+                list1 (list): First list.
+                list2 (list): Second list.
+        
+            Returns:
+                bool: True if common element(s) exist, False otherwise.
+            """
+            return any(item in list2 for item in list1)
+        
+        # Example usage:
+        list_a = [1, 2, 3, 4, 5]
+        list_b = [5, 6, 7, 8, 9]
+        print(has_common_element(list_a, list_b))  # Output: True        
+            </pre>
+    </div>
+ <!-- Question 14 -->
+    <div class="question">
+        <h2>Question 14:</h2>
+        <p>Write a Python function remove_negatives that takes a list of integers as input and returns a new list with all negative numbers removed.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def remove_negatives(numbers):
+            """
+            Removes negative numbers from a list of integers.
+        
+            Args:
+                numbers (list): List of integers.
+        
+            Returns:
+                list: New list with negative numbers removed.
+            """
+            return [num for num in numbers if num >= 0]
+        
+        # Example usage:
+        my_list = [10, -5, 20, -3, 15]
+        positive_numbers = remove_negatives(my_list)
+        print(positive_numbers)                
+            </pre>
+    </div>
+ <!-- Question 15 -->
+    <div class="question">
+        <h2>Question 15:</h2>
+        <p>Write a Python program that takes a list of strings as input and returns a new list containing only the strings that start with a vowel (a, e, i, o, u).</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def filter_vowel_strings(strings):
+            """
+            Filters strings starting with a vowel (a, e, i, o, u).
+        
+            Args:
+                strings (list): List of strings.
+        
+            Returns:
+                list: Filtered list containing vowel strings.
+            """
+            return [word for word in strings if word[0].lower() in 'aeiou']
+        
+        # Example usage:
+        my_words = ["apple", "banana", "orange", "grape", "kiwi"]
+        vowel_strings = filter_vowel_strings(my_words)
+        print(vowel_strings)            
+        </pre>
+    </div>
+ <!-- Question 16 -->
+    <div class="question">
+        <h2>Question 16:</h2>
+        <p>Write a Python function merge_lists that takes two lists as input and returns a new list containing all the elements from both lists, with duplicates removed.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def merge_lists(list1, list2):
+            """
+            Merges two lists and returns a new list with duplicates removed.
+        
+            Args:
+                list1 (list): First list.
+                list2 (list): Second list.
+        
+            Returns:
+                list: Merged list without duplicates.
+            """
+            return list(set(list1 + list2))
+        
+        # Example usage:
+        list_a = [1, 2, 3]
+        list_b = [3, 4, 5]
+        merged_list = merge_lists(list_a, list_b)
+        print(merged_list)  # Output: [1, 2, 3, 4, 5]         
+        </pre>
+    </div>
+ <!-- Question 17 -->
+    <div class="question">
+        <h2>Question 17:</h2>
+        <p>Write a Python program that takes a list of numbers as input and returns a new list containing the square of each number.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def square_numbers(numbers):
+            """
+            Returns a list containing the square of each number.
+        
+            Args:
+                numbers (list): List of numbers.
+        
+            Returns:
+                list: List of squared numbers.
+            """
+            return [num ** 2 for num in numbers]
+        
+        # Example usage:
+        my_numbers = [1, 2, 3, 4]
+        squared_list = square_numbers(my_numbers)
+        print(squared_list)  # Output: [1, 4, 9, 16]                   
+        </pre>
+    </div>
+ <!-- Question 18 -->
+    <div class="question">
+        <h2>Question 18:</h2>
+        <p>Write a Python function count_elements that takes a list as input and returns a dictionary where the keys are the unique elements in the list, and the values are the counts of each element.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def count_elements(my_list):
+            """
+            Counts the occurrences of each element in the list.
+        
+            Args:
+                my_list (list): List of elements.
+        
+            Returns:
+                dict: Dictionary with element counts.
+            """
+            element_counts = {}
+            for item in my_list:
+                element_counts[item] = element_counts.get(item, 0) + 1
+            return element_counts
+        
+        # Example usage:
+        my_list = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+        element_counts_dict = count_elements(my_list)
+        print(element_counts_dict)        
+        </pre>
+    </div>
+ <!-- Question 19 -->
+    <div class="question">
+        <h2>Question 19:</h2>
+        <p>Write a Python program that takes a list of strings as input and returns True if all the strings contain only alphabetic characters, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def all_strings_alphabetic(strings):
+            """
+            Checks if all strings in the list contain only alphabetic characters.
+        
+            Args:
+                strings (list): List of strings.
+        
+            Returns:
+                bool: True if all strings are alphabetic, False otherwise.
+            """
+            return all(string.isalpha() for string in strings)
+        
+        # Example usage:
+        my_strings = ["apple", "banana", "cherry"]
+        print(all_strings_alphabetic(my_strings))  # Output: True                  
+        </pre>
+    </div>
+ <!-- Question 20 -->
+    <div class="question">
+        <h2>Question 20:</h2>
+        <p>Write a Python function reverse_list that takes a list as input and returns a new list with the elements in reverse order.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def reverse_list(my_list):
+            """
+            Reverses the order of elements in the list.
+        
+            Args:
+                my_list (list): List of elements.
+        
+            Returns:
+                list: Reversed list.
+            """
+            return my_list[::-1]
+        
+        # Example usage:
+        original_list = [1, 2, 3, 4, 5]
+        reversed_list = reverse_list(original_list)
+        print(reversed_list)  # Output: [5, 4, 3, 2, 1]                   
+        </pre>
+    </div>
+    <!-- Question 21 -->
+    <div class="question">
+        <h2>Question 21:</h2>
+        <p>Write a Python program that takes two tuples as input and returns a new tuple with elements from both tuples, but with duplicates removed.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def merge_tuples(tuple1, tuple2):
+            """
+            Merges two tuples and returns a new tuple with duplicates removed.
+        
+            Args:
+                tuple1 (tuple): First tuple.
+                tuple2 (tuple): Second tuple.
+        
+            Returns:
+                tuple: Merged tuple without duplicates.
+            """
+            merged_set = set(tuple1 + tuple2)
+            return tuple(merged_set)
+        
+        # Example usage:
+        tuple_a = (1, 2, 3)
+        tuple_b = (3, 4, 5)
+        merged_tuple = merge_tuples(tuple_a, tuple_b)
+        print(merged_tuple)  # Output: (1, 2, 3, 4, 5)        
+            </pre>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question">
+        <h2>Question 22:</h2>
+        <p>Write a Python function tuple_average that takes a tuple of numbers as input and returns the average of those numbers.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def tuple_average(numbers):
+            """
+            Calculates the average of numbers in a tuple.
+        
+            Args:
+                numbers (tuple): Tuple of numbers.
+        
+            Returns:
+                float: Average value.
+            """
+            return sum(numbers) / len(numbers)
+        
+        # Example usage:
+        my_tuple = (10, 20, 30, 40)
+        avg = tuple_average(my_tuple)
+        print(f"Average: {avg:.2f}")  # Output: Average: 25.00              
+            </pre>
+    </div>
+ <!-- Question 23 -->
+    <div class="question">
+        <h2>Question 23:</h2>
+        <p>Write a Python program that takes a list of tuples as input, where each tuple contains a student's name and their score, and returns a new list of tuples sorted by score (highest to lowest).</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def sort_by_score(student_scores):
+            """
+            Sorts a list of student scores (tuples) by score (highest to lowest).
+        
+            Args:
+                student_scores (list): List of tuples (name, score).
+        
+            Returns:
+                list: Sorted list of tuples.
+            """
+            sorted_scores = sorted(student_scores, key=lambda x: x[1], reverse=True)
+            return sorted_scores
+        
+        # Example usage:
+        student_scores_list = [("Alice", 85), ("Bob", 92), ("Charlie", 78)]
+        sorted_scores_list = sort_by_score(student_scores_list)
+        print(sorted_scores_list)        
+            </pre>
+    </div>
+ <!-- Question 24 -->
+    <div class="question">
+        <h2>Question 24:</h2>
+        <p>Write a Python function tuple_frequency that takes a tuple as input and returns a dictionary where the keys are the unique elements in the tuple, and the values are the frequencies of each element.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def tuple_frequency(my_tuple):
+            """
+            Counts the occurrences of each element in the tuple.
+        
+            Args:
+                my_tuple (tuple): Tuple of elements.
+        
+            Returns:
+                dict: Dictionary with element frequencies.
+            """
+            element_counts = {}
+            for item in my_tuple:
+                element_counts[item] = element_counts.get(item, 0) + 1
+            return element_counts
+        
+        # Example usage:
+        my_tuple = (1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
+        element_counts_dict = tuple_frequency(my_tuple)
+        print(element_counts_dict)        
+            </pre>
+    </div>
+ <!-- Question 25 -->
+    <div class="question">
+        <h2>Question 25:</h2>
+        <p>Write a Python program that takes a list of tuples as input, where each tuple contains a student's name and their age, and returns True if all the ages are above 18, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def all_ages_above_18(student_ages):
+            """
+            Checks if all ages in the list of tuples are above 18.
+        
+            Args:
+                student_ages (list): List of tuples (name, age).
+        
+            Returns:
+                bool: True if all ages are above 18, False otherwise.
+            """
+            return all(age > 18 for _, age in student_ages)
+        
+        # Example usage:
+        student_ages_list = [("Alice", 20), ("Bob", 22), ("Charlie", 17)]
+        print(all_ages_above_18(student_ages_list))  # Output: False                 
+            </pre>
+    </div>
+ <!-- Question 26 -->
+    <div class="question">
+        <h2>Question 26:</h2>
+        <p>Write a Python function tuple_product that takes two tuples of numbers as input and returns a new tuple containing the product of corresponding elements from both tuples.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def tuple_product(tuple1, tuple2):
+            """
+            Returns a new tuple containing the product of corresponding elements from both tuples.
+        
+            Args:
+                tuple1 (tuple): First tuple.
+                tuple2 (tuple): Second tuple.
+        
+            Returns:
+                tuple: Tuple with element-wise products.
+            """
+            product_elements = tuple(x * y for x, y in zip(tuple1, tuple2))
+            return product_elements
+        
+        # Example usage:
+        tuple_a = (2, 3, 4)
+        tuple_b = (5, 6, 7)
+        product_tuple = tuple_product(tuple_a, tuple_b)
+        print(product_tuple)  # Output: (10, 18, 28)                       
+            </pre>
+    </div>
+ <!-- Question 27 -->
+    <div class="question">
+        <h2>Question 27:</h2>
+        <p>Write a Python program that takes a list of tuples as input, where each tuple contains a word and its length, and returns a new list of tuples sorted by length (shortest to longest).</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def sort_by_length(word_length_tuples):
+            """
+            Sorts a list of tuples (word, length) by length (shortest to longest).
+        
+            Args:
+                word_length_tuples (list): List of tuples (word, length).
+        
+            Returns:
+                list: Sorted list of tuples.
+            """
+            sorted_by_length = sorted(word_length_tuples, key=lambda x: len(x[0]))
+            return sorted_by_length
+        
+        # Example usage:
+        word_lengths_list = [("apple", 5), ("banana", 6), ("cherry", 6), ("date", 4)]
+        sorted_by_length_list = sort_by_length(word_lengths_list)
+        print(sorted_by_length_list)        
+            </pre>
+    </div>
+ <!-- Question 28 -->
+    <div class="question">
+        <h2>Question 28:</h2>
+        <p>Write a Python function tuple_concat that takes two tuples as input and returns a new tuple with elements from both tuples concatenated.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def tuple_concat(tuple1, tuple2):
+            """
+            Concatenates elements from both tuples and returns a new tuple.
+        
+            Args:
+                tuple1 (tuple): First tuple.
+                tuple2 (tuple): Second tuple.
+        
+            Returns:
+                tuple: Concatenated tuple.
+            """
+            return tuple1 + tuple2
+        
+        # Example usage:
+        tuple_x = (1, 2, 3)
+        tuple_y = (4, 5, 6)
+        concatenated_tuple = tuple_concat(tuple_x, tuple_y)
+        print(concatenated_tuple)  # Output: (1, 2, 3, 4, 5, 6)                 
+        </pre>
+    </div>
+ <!-- Question 29 -->
+    <div class="question">
+        <h2>Question 29:</h2>
+        <p>Write a Python program that takes a list of tuples as input, where each tuple contains a word and its frequency, and returns a new list of tuples containing the top N most frequent words.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def top_n_frequent_words(word_frequency_tuples, n):
+            """
+            Returns the top N most frequent words from the list of tuples.
+        
+            Args:
+                word_frequency_tuples (list): List of tuples (word, frequency).
+                n (int): Number of top words to return.
+        
+            Returns:
+                list: List of top N tuples (word, frequency).
+            """
+            sorted_by_frequency = sorted(word_frequency_tuples, key=lambda x: x[1], reverse=True)
+            return sorted_by_frequency[:n]
+        
+        # Example usage:
+        word_frequency_list = [("apple", 10), ("banana", 15), ("cherry", 8), ("date", 12)]
+        top_words = top_n_frequent_words(word_frequency_list, 2)
+        print(top_words)  # Output: [('banana', 15), ('date', 12)]                
+        </pre>
+    </div>
+ <!-- Question 30 -->
+    <div class="question">
+        <h2>Question 30:</h2>
+        <p>Write a Python function tuple_median that takes a tuple of numbers as input and returns the median value.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            import statistics
+
+            def tuple_median(numbers_tuple):
+                """
+                Calculates the median value of a tuple of numbers.
+            
+                Args:
+                    numbers_tuple (tuple): Tuple of numbers.
+            
+                Returns:
+                    float: Median value.
+                """
+                return statistics.median(numbers_tuple)
+            
+            # Example usage:
+            my_numbers = (1, 2, 3, 4, 5)
+            median_value = tuple_median(my_numbers)
+            print(f"Median: {median_value:.2f}")                   
+        </pre>
+    </div>
+ <!-- Question 31 -->
+    <div class="question">
+        <h2>Question 31:</h2>
+        <p>Write a Python program that takes two sets as input and returns a new set containing elements that are unique to each set.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def unique_elements_in_each_set(set1, set2):
+            """
+            Returns a new set containing elements unique to each set.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                set: Set with unique elements.
+            """
+            return set1 ^ set2
+        
+        # Example usage:
+        set_a = {1, 2, 3}
+        set_b = {3, 4, 5}
+        unique_elements = unique_elements_in_each_set(set_a, set_b)
+        print(unique_elements)  # Output: {1, 2, 4, 5}        
+            </pre>
+    </div>
+ <!-- Question 32 -->
+    <div class="question">
+        <h2>Question 32:</h2>
+        <p>Write a Python function set_intersection that takes two sets as input and returns a new set containing elements that are common to both sets.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def set_intersection(set1, set2):
+            """
+            Returns a new set containing elements common to both sets.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                set: Set with common elements.
+            """
+            return set1 & set2
+        
+        # Example usage:
+        set_x = {1, 2, 3}
+        set_y = {3, 4, 5}
+        intersection_set = set_intersection(set_x, set_y)
+        print(intersection_set)  # Output: {3}               
+        </pre>
+    </div>
+ <!-- Question 33 -->
+    <div class="question">
+        <h2>Question 33:</h2>
+        <p>Write a Python program that takes a list of numbers as input and returns a new set containing only the unique numbers from the original list.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def unique_numbers_from_list(numbers_list):
+            """
+            Returns a set containing unique numbers from the list.
+        
+            Args:
+                numbers_list (list): List of numbers.
+        
+            Returns:
+                set: Set with unique numbers.
+            """
+            return set(numbers_list)
+        
+        # Example usage:
+        my_numbers = [1, 2, 2, 3, 3, 4, 4, 5]
+        unique_set = unique_numbers_from_list(my_numbers)
+        print(unique_set)  # Output: {1, 2, 3, 4, 5}        
+            </pre>
+    </div>
+ <!-- Question 34 -->
+    <div class="question">
+        <h2>Question 34:</h2>
+        <p>Write a Python function set_difference that takes two sets as input and returns a new set containing elements that are present in the first set but not in the second set.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def set_difference(set1, set2):
+            """
+            Returns a new set containing elements present in the first set but not in the second set.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                set: Set with difference elements.
+            """
+            return set1 - set2
+        
+        # Example usage:
+        set_p = {1, 2, 3, 4}
+        set_q = {3, 4, 5}
+        difference_set = set_difference(set_p, set_q)
+        print(difference_set)  # Output: {1, 2}                         
+        </pre>
+    </div>
+ <!-- Question 35 -->
+    <div class="question">
+        <h2>Question 35:</h2>
+        <p>Write a Python program that takes two sets as input and returns True if the first set is a subset of the second set, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_subset(set1, set2):
+            """
+            Checks if set1 is a subset of set2.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                bool: True if set1 is a subset of set2, False otherwise.
+            """
+            # Using issubset() method
+            return set1.issubset(set2)
+        
+            # Alternatively, using subset operator (<=)
+            # return set1 <= set2
+        
+        # Example usage:
+        set_a = {1, 2, 3}
+        set_b = {1, 2, 3, 4, 5}
+        print(is_subset(set_a, set_b))  # Output: True             
+        </pre>
+    </div>
+ <!-- Question 36 -->
+    <div class="question">
+        <h2>Question 36:</h2>
+        <p>Write a Python function set_union that takes two sets as input and returns a new set containing all the elements from both sets.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def set_union(set1, set2):
+            """
+            Returns a new set containing all elements from both sets.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                set: Set with union of elements.
+            """
+            return set1 | set2
+        
+        # Example usage:
+        set_x = {1, 2,  3}
+        set_y = {3, 4, 5}
+        union_set = set_union(set_x, set_y)
+        print(union_set)  # Output: {1, 2, 3, 4, 5}        
+        </pre>
+    </div>
+ <!-- Question 37 -->
+    <div class="question">
+        <h2>Question 37:</h2>
+        <p>Write a Python program that takes a list of strings as input and returns a new set containing only the unique characters present in the strings.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def unique_characters_from_strings(string_list):
+            """
+            Returns a set containing unique characters from the list of strings.
+        
+            Args:
+                string_list (list): List of strings.
+        
+            Returns:
+                set: Set with unique characters.
+            """
+            unique_chars = set()
+            for string in string_list:
+                unique_chars.update(set(string))
+            return unique_chars
+        
+        # Example usage:
+        my_strings = ["hello", "world", "python"]
+        unique_chars_set = unique_characters_from_strings(my_strings)
+        print(unique_chars_set)  # Output: {'h', 'e', 'l', 'o', 'w', 'r', 'd', 't', 'y', 'p', 'n'}              
+        </pre>
+    </div>
+ <!-- Question 38 -->
+    <div class="question">
+        <h2>Question 38:</h2>
+        <p>Write a Python function set_symmetric_difference that takes two sets as input and returns a new set containing elements that are present in either set, but not in both sets.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def set_symmetric_difference(set1, set2):
+            """
+            Returns a new set containing elements present in either set, but not in both sets.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                set: Set with symmetric difference elements.
+            """
+            return set1 ^ set2
+        
+        # Example usage:
+        set_p = {1, 2, 3, 4}
+        set_q = {3, 4, 5}
+        symmetric_diff_set = set_symmetric_difference(set_p, set_q)
+        print(symmetric_diff_set)  # Output: {1, 2, 5}        
+        </pre>
+    </div>
+ <!-- Question 39 -->
+    <div class="question">
+        <h2>Question 39:</h2>
+        <p>Write a Python program that takes a list of sets as input and returns a new set containing the intersection of all the sets.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def intersection_of_all_sets(set_list):
+            """
+            Returns a set containing the intersection of all sets in the list.
+        
+            Args:
+                set_list (list): List of sets.
+        
+            Returns:
+                set: Intersection of all sets.
+            """
+            if not set_list:
+                return set()  # Empty set if no sets provided
+            result_set = set_list[0]
+            for s in set_list[1:]:
+                result_set &= s
+            return result_set
+        
+        # Example usage:
+        my_sets = [{1, 2, 3}, {2, 3, 4}, {3, 4, 5}]
+        intersection_set = intersection_of_all_sets           
+        </pre>
+    </div>
+ <!-- Question 40 -->
+    <div class="question">
+        <h2>Question 40:</h2>
+        <p>Write a Python function is_disjoint that takes two sets as input and returns True if they have no elements in common, and False otherwise.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            def is_disjoint(set1, set2):
+            """
+            Checks if two sets have no elements in common.
+        
+            Args:
+                set1 (set): First set.
+                set2 (set): Second set.
+        
+            Returns:
+                bool: True if sets are disjoint, False otherwise.
+            """
+            return set1.isdisjoint(set2)
+        
+        # Example usage:
+        set_a = {1, 2, 3}
+        set_b = {4, 5, 6}
+        print(is_disjoint(set_a, set_b))  # Output: True                
+        </pre>
+    </div>
+ <!-- Question 41 -->
+ <div class="question">
+    <h2>Question 41:</h2>
+    <p>Write a Python program that takes a dictionary as input and returns a new dictionary containing only the key-value pairs where the value is an integer.</p>
+</div>
+<div class="answer">
+    <pre>
+        def filter_int_values(input_dict):
+        """
+        Filters dictionary to include only key-value pairs with integer values.
+    
+        Args:
+            input_dict (dict): Input dictionary.
+    
+        Returns:
+            dict: New dictionary with integer values.
+        """
+        return {key: value for key, value in input_dict.items() if isinstance(value, int)}
+    
+    # Example usage:
+    my_dict = {'a': 10, 'b': 'hello', 'c': 20, 'd': 30.5}
+    filtered_dict = filter_int_values(my_dict)
+    print(filtered_dict)  # Output: {'a': 10, 'c': 20}    
+        </pre>
+</div>
+<!-- Question 42 -->
+<div class="question">
+    <h2>Question 42:</h2>
+    <p>Write a Python function merge_dicts that takes two dictionaries as input and returns a new dictionary containing all the key-value pairs from both dictionaries.</p>
+</div>
+<div class="answer">
+    <pre>
+        def merge_dicts(dict1, dict2):
+        """
+        Merges two dictionaries into a new dictionary.
+    
+        Args:
+            dict1 (dict): First dictionary.
+            dict2 (dict): Second dictionary.
+    
+        Returns:
+            dict: Merged dictionary.
+        """
+        merged_dict = {**dict1, **dict2}
+        return merged_dict
+    
+    # Example usage:
+    dict_a = {'a': 10, 'b': 20}
+    dict_b = {'b': 30, 'c': 40}
+    merged_result = merge_dicts(dict_a, dict_b)
+    print(merged_result)  # Output: {'a': 10, 'b': 30, 'c': 40}            
+    </pre>
+</div>
+<!-- Question 43 -->
+<div class="question">
+    <h2>Question 43:</h2>
+    <p>Write a Python program that takes a list of dictionaries as input, where each dictionary contains information about a student (name, age, grade), and returns a new dictionary containing only the students who passed (grade >= 60).</p>
+</div>
+<div class="answer">
+    <pre>
+        def filter_passed_students(students_list):
+        """
+        Filters students who passed (grade >= 60).
+    
+        Args:
+            students_list (list): List of student dictionaries.
+    
+        Returns:
+            dict: New dictionary with passed students.
+        """
+        passed_students = {student['name']: student['grade'] for student in students_list if student['grade'] >= 60}
+        return passed_students
+    
+    # Example usage:
+    student_records = [
+        {'name': 'Alice', 'age': 20, 'grade': 75},
+        {'name': 'Bob', 'age': 22, 'grade': 55},
+        {'name': 'Charlie', 'age': 19, 'grade': 90}
+    ]
+    passed_dict = filter_passed_students(student_records)
+    print(passed_dict)  # Output: {'Alice': 75, 'Charlie': 90}    
+        </pre>
+</div>
+<!-- Question 44 -->
+<div class="question">
+    <h2>Question 44:</h2>
+    <p>Write a Python function dict_frequency that takes a list of strings as input and returns a dictionary where the keys are the unique words in the list, and the values are the frequencies of each word.</p>
+</div>
+<div class="answer">
+    <pre>
+        def dict_frequency(word_list):
+        """
+        Counts the frequencies of words in a list.
+    
+        Args:
+            word_list (list): List of strings.
+    
+        Returns:
+            dict: Dictionary with word frequencies.
+        """
+        word_freq = {}
+        for word in word_list:
+            word_freq[word] = word_freq.get(word, 0) + 1
+        return word_freq
+    
+    # Example usage:
+    my_words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+    word_counts = dict_frequency(my_words)
+    print(word_counts)  # Output: {'apple': 3, 'banana': 2, 'cherry': 1}                        
+    </pre>
+</div>
+<!-- Question 45 -->
+<div class="question">
+    <h2>Question 45:</h2>
+    <p>Write a Python program that takes a dictionary as input and returns a new dictionary containing the keys and values swapped.</p>
+</div>
+<div class="answer">
+    <pre>
+        def swap_keys_values(input_dict):
+        """
+        Swaps keys and values in a dictionary.
+    
+        Args:
+            input_dict (dict): Input dictionary.
+    
+        Returns:
+            dict: New dictionary with swapped keys and values.
+        """
+        return {value: key for key, value in input_dict.items()}
+    
+    # Example usage:
+    my_dict = {'name': 'Alice', 'age': 30}
+    swapped_dict = swap_keys_values(my_dict)
+    print(swapped_dict)  # Output: {'Alice': 'name', 30: 'age'}        
+    </pre>
+</div>
+<!-- Question 46 -->
+<div class="question">
+    <h2>Question 46:</h2>
+    <p>Write a Python function dict_merge_values that takes two dictionaries as input and returns a new dictionary containing the keys from both dictionaries, with the values merged into a single list.</p>
+</div>
+<div class="answer">
+    <pre>
+        def dict_merge_values(dict1, dict2):
+        """
+        Merges dictionary values into a single list.
+    
+        Args:
+            dict1 (dict): First dictionary.
+            dict2 (dict): Second dictionary.
+    
+        Returns:
+            dict: New dictionary with merged values.
+        """
+        merged_dict = {}
+        for key in set(dict1) | set(dict2):
+            merged_dict[key] = dict1.get(key, []) + dict2.get(key, [])
+        return merged_dict
+    
+    # Example usage:
+    dict_a = {'a': [1, 2], 'b': [3]}
+    dict_b = {'b': [4, 5], 'c': [6]}
+    merged_result = dict_merge_values(dict_a, dict_b)
+    print(merged_result)  # Output: {'a': [1, 2], 'b': [3,  4, 5], 'c': [6]}    
+    </pre>
+</div>
+<!-- Question 47 -->
+<div class="question">
+    <h2>Question 47:</h2>
+    <p>Write a Python program that takes a list of dictionaries as input, where each dictionary contains information about a person (name, age, city), and returns a new dictionary containing the names as keys and the ages as values.</p>
+</div>
+<div class="answer">
+    <pre>
+        def create_name_age_dict(person_list):
+        """
+        Creates a dictionary with names as keys and ages as values.
+    
+        Args:
+            person_list (list): List of dictionaries containing person information.
+    
+        Returns:
+            dict: New dictionary with names as keys and ages as values.
+        """
+        name_age_dict = {}
+        for person in person_list:
+            name_age_dict[person['name']] = person['age']
+        return name_age_dict
+    
+    # Example usage:
+    people_info = [
+        {'name': 'Alice', 'age': 25},
+        {'name': 'Bob', 'age': 30},
+        {'name': 'Charlie', 'age': 22}
+    ]
+    name_age_mapping = create_name_age_dict(people_info)
+    print(name_age_mapping)  # Output: {'Alice': 25, 'Bob': 30, 'Charlie': 22}           
+    </pre>
+</div>
+<!-- Question 48 -->
+<div class="question">
+    <h2>Question 48:</h2>
+    <p>Write a Python function dict_remove_empty that takes a dictionary as input and returns a new dictionary containing only the key-value pairs where the value is not empty.</p>
+</div>
+<div class="answer">
+    <pre>
+        def dict_remove_empty(input_dict):
+        """
+        Removes key-value pairs with empty values from the dictionary.
+    
+        Args:
+            input_dict (dict): Input dictionary.
+    
+        Returns:
+            dict: New dictionary with non-empty values.
+        """
+        return {key: value for key, value in input_dict.items() if value}
+    
+    # Example usage:
+    my_dict = {'name': 'Alice', 'age': '', 'city': 'Wonderland', 'hobbies': []}
+    non_empty_dict = dict_remove_empty(my_dict)
+    print(non_empty_dict)  # Output: {'name': 'Alice', 'city': 'Wonderland'}    
+    </pre>
+</div>
+<!-- Question 49 -->
+<div class="question">
+    <h2>Question 49:</h2>
+    <p>Write a Python program that takes a list of dictionaries as input, where each dictionary contains information about a product (name, price, quantity), and returns the total cost of all the products.</p>
+</div>
+<div class="answer">
+    <pre>
+        def calculate_total_cost(products_list):
+        """
+        Calculates the total cost of products from a list of dictionaries.
+    
+        Args:
+            products_list (list): List of dictionaries containing product information.
+    
+        Returns:
+            float: Total cost of all products.
+        """
+        total_cost = sum(product['price'] * product['quantity'] for product in products_list)
+        return total_cost
+    
+    # Example usage:
+    products_info = [
+        {'name': 'Apple', 'price': 1.5, 'quantity': 10},
+        {'name': 'Banana', 'price': 0.75, 'quantity': 20},
+        {'name': 'Orange', 'price': 2.0, 'quantity': 15}
+    ]
+    total_product_cost = calculate_total_cost(products_info)
+    print(f"Total cost of products: ${total_product_cost:.2f}")            
+    </pre>
+</div>
+<!-- Question 50 -->
+<div class="question">
+    <h2>Question 50:</h2>
+    <p>Write a Python function dict_combine_lists that takes two dictionaries as input, where each dictionary contains lists as values, and returns a new dictionary containing the keys from both dictionaries, with the lists concatenated.</p>
+</div>
+<div class="answer">
+    <pre>
+        def dict_combine_lists(dict1, dict2):
+        """
+        Combines lists in two dictionaries into a new dictionary.
+    
+        Args:
+            dict1 (dict): First dictionary.
+            dict2 (dict): Second dictionary.
+    
+        Returns:
+            dict: New dictionary with concatenated lists.
+        """
+        combined_dict = {}
+        for key in set(dict1) | set(dict2):
+            combined_dict[key] = dict1.get(key, []) + dict2.get(key, [])
+        return combined_dict
+    
+    # Example usage:
+    dict_x = {'a': [1, 2], 'b': [3]}
+    dict_y = {'b': [4, 5], 'c': [6]}
+    combined_result = dict_combine_lists(dict_x, dict_y)
+    print(combined_result)  # Output: {'a': [1, 2], 'b': [3, 4, 5], 'c': [6]}             
+    </pre>
+</div>
+    <!-- Repeat the above structure for additional questions and answers -->
+
+</div>
+
+</body>
+</html>
