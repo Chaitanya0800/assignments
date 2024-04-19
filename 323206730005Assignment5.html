@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer Assignment</title>
+</head>
+<body>
+
+<h1>Question and Answer Assignment</h1>
+
+<div class="qa-container">
+
+    <!-- Question 1 -->
+    <div class="question">
+        <h2>Question 1:</h2>
+        <p>Write a Python class called Rectangle that represents a rectangle. Include methods to calculate the area and perimeter of the rectangle.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Rectangle:
+            def __init__(self, length, width):
+                self.length = length
+                self.width = width
+        
+            def calculate_area(self):
+                return self.length * self.width
+        
+            def calculate_perimeter(self):
+                return 2 * (self.length + self.width)
+        
+        # Example usage
+        rectangle = Rectangle(5, 3)
+        print(f"Area: {rectangle.calculate_area()}")
+        print(f"Perimeter: {rectangle.calculate_perimeter()}")                 
+            </pre>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <h2>Question 2:</h2>
+        <p>Create a class named Employee with attributes name, age, and salary. Write methods to set and get each attribute.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Employee:
+            def __init__(self, name, age, salary):
+                self.name = name
+                self.age = age
+                self.salary = salary
+        
+            def get_name(self):
+                return self.name
+        
+            def get_age(self):
+                return self.age
+        
+            def get_salary(self):
+                return self.salary
+        
+        # Example usage
+        employee = Employee("John Doe", 30, 60000)
+        print(f"Name: {employee.get_name()}")
+        print(f"Age: {employee.get_age()}")
+        print(f"Salary: ${employee.get_salary()}")                          
+            </pre>
+    </div>
+ <!-- Question 3 -->
+    <div class="question">
+        <h2>Question 3:</h2>
+        <p>Implement a class Car that represents a car. Include attributes like make, model, year, and methods to accelerate and brake.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Car:
+            def __init__(self, make, model, year):
+                self.make = make
+                self.model = model
+                self.year = year
+        
+            def accelerate(self):
+                print(f"{self.make} {self.model} is accelerating.")
+        
+            def brake(self):
+                print(f"{self.make} {self.model} is braking.")
+        
+        # Example usage
+        car = Car("Toyota", "Camry", 2022)
+        car.accelerate()
+        car.brake()                                     
+            </pre>
+    </div>
+ <!-- Question 4 -->
+    <div class="question">
+        <h2>Question 4:</h2>
+        <p>Develop a class Book with attributes title, author, and pages. Include methods to display the book details.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Book:
+            def __init__(self, title, author, pages):
+                self.title = title
+                self.author = author
+                self.pages = pages
+        
+            def display_details(self):
+                print(f"Title: {self.title}")
+                print(f"Author: {self.author}")
+                print(f"Pages: {self.pages}")
+        
+        # Example usage
+        book = Book("The Great Gatsby", "F. Scott Fitzgerald", 256)
+        book.display_details()                                     
+            </pre>
+    </div>
+ <!-- Question 5 -->
+    <div class="question">
+        <h2>Question 5:</h2>
+        <p>Construct a class Triangle to represent a triangle with attributes base, height, and methods to calculate area and perimeter.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Triangle:
+            def __init__(self, base, height):
+                self.base = base
+                self.height = height
+        
+            def calculate_area(self):
+                return 0.5 * self.base * self.height
+        
+            def calculate_perimeter(self):
+                # Assuming it's an equilateral triangle
+                return 3 * self.base
+        
+        # Example usage
+        triangle = Triangle(6, 4)
+        print(f"Area: {triangle.calculate_area()}")
+        print(f"Perimeter: {triangle.calculate_perimeter()}")                                      
+            </pre>
+    </div>
+ <!-- Question 6 -->
+    <div class="question">
+        <h2>Question 6:</h2>
+        <p>Design a class BankAccount with attributes account_number, balance, and methods to deposit, withdraw, and display balance.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class BankAccount:
+            def __init__(self, account_number, balance):
+                self.account_number = account_number
+                self.balance = balance
+        
+            def deposit(self, amount):
+                self.balance += amount
+        
+            def withdraw(self, amount):
+                if amount <= self.balance:
+                    self.balance -= amount
+                else:
+                    print("Insufficient funds.")
+        
+            def display_balance(self):
+                print(f"Account Number: {self.account_number}")
+                print(f"Balance: ${self.balance}")
+        
+        # Example usage
+        account = BankAccount("123456", 1000)
+        account.deposit(200)
+        account.withdraw(300)
+        account.display_balance()                                            
+            </pre>
+    </div>
+ <!-- Question 7 -->
+    <div class="question">
+        <h2>Question 7:</h2>
+        <p>Create a class Student with attributes name, age, grade, and methods to calculate GPA and display student information.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Student:
+            def __init__(self, name, age, grade):
+                self.name = name
+                self.age = age
+                self.grade = grade
+        
+            def calculate_gpa(self):
+                # Implement GPA calculation logic here
+                return 3.8
+        
+            def display_info(self):
+                print(f"Name: {self.name}")
+                print(f"Age: {self.age}")
+                print(f"Grade: {self.grade}")
+                print(f"GPA: {self.calculate_gpa()}")
+        
+        # Example usage
+        student = Student("Alice", 18, 12)
+        student.display_info()                                  
+            </pre>
+    </div>
+ <!-- Question 8 -->
+    <div class="question">
+        <h2>Question 8:</h2>
+        <p>Build a class Circle to represent a circle with attributes radius and methods to calculate area and circumference.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            import math
+
+            class Circle:
+                def __init__(self, radius):
+                    self.radius = radius
+            
+                def calculate_area(self):
+                    return math.pi * self.radius ** 2
+            
+                def calculate_circumference(self):
+                    return 2 * math.pi * self.radius
+            
+            # Example usage
+            circle = Circle(5)
+            print(f"Area: {circle.calculate_area()}")
+            print(f"Circumference: {circle.calculate_circumference()}")                            
+        </pre>
+    </div>
+ <!-- Question 9 -->
+    <div class="question">
+        <h2>Question 9:</h2>
+        <p>Implement a class Time to represent time with attributes hour, minute, second, and methods to add and subtract time.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Time:
+            def __init__(self, hour=0, minute=0, second=0):
+                self.hour = hour
+                self.minute = minute                             
+            </pre>
+    </div>
+ <!-- Question 10 -->
+    <div class="question">
+        <h2>Question 10:</h2>
+        <p>Develop a class Invoice with attributes invoice_number, customer_name, total_amount, and methods to calculate and display invoice details.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Invoice:
+            def __init__(self, invoice_number, customer_name, total_amount):
+                self.invoice_number = invoice_number
+                self.customer_name = customer_name
+                self.total_amount = total_amount
+        
+            def calculate_tax(self, tax_rate):
+                return self.total_amount * tax_rate
+        
+            def display_invoice(self):
+                print(f"Invoice Number: {self.invoice_number}")
+                print(f"Customer Name: {self.customer_name}")
+                print(f"Total Amount: {self.total_amount:.2f}")
+                print(f"Tax (5%): {self.calculate_tax(0.05):.2f}")
+                print(f"Grand Total: {self.total_amount + self.calculate_tax(0.05):.2f}")
+        
+        # Example usage
+        invoice1 = Invoice("INV123", "John Doe", 1000)
+        invoice1.display_invoice()                           
+            </pre>
+    </div>
+ <!-- Question 11 -->
+    <div class="question">
+        <h2>Question 11:</h2>
+        <p>Write a Python script that creates multiple instances of a Circle class with different radii and calculates their areas.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            import math
+
+            class Circle:
+                def __init__(self, radius):
+                    self.radius = radius
+            
+                def calculate_area(self):
+                    return math.pi * self.radius ** 2
+            
+            # Create instances of Circle with different radii
+            circle1 = Circle(5)
+            circle2 = Circle(7)
+            circle3 = Circle(10)
+            
+            # Calculate and display the areas
+            print(f"Circle 1 (radius {circle1.radius}): Area = {circle1.calculate_area():.2f}")
+            print(f"Circle 2 (radius {circle2.radius}): Area = {circle2.calculate_area():.2f}")
+            print(f"Circle 3 (radius {circle3.radius}): Area = {circle3.calculate_area():.2f}")                                       
+            </pre>
+    </div>
+ <!-- Question 12 -->
+    <div class="question">
+        <h2>Question 12:</h2>
+        <p>Create instances of the Employee class from the previous assignment and display their details.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Employee:
+            def __init__(self, emp_id, emp_name, emp_salary):
+                self.emp_id = emp_id
+                self.emp_name = emp_name
+                self.emp_salary = emp_salary
+        
+            def display_details(self):
+                print(f"Employee ID: {self.emp_id}")
+                print(f"Employee Name: {self.emp_name}")
+                print(f"Employee Salary: {self.emp_salary:.2f}")
+        
+        # Create instances of Employee
+        employee1 = Employee(101, "John Doe", 50000)
+        employee2 = Employee(102, "Jane Smith", 60000)
+        employee3 = Employee(103, "Mike Johnson", 70000)
+        
+        # Display employee details
+        print("Employee 1:")
+        employee1.display_details()
+        print("\nEmployee 2:")
+        employee2.display_details()
+        print("\nEmployee 3:")
+        employee3.display_details()                                 
+        </pre>
+    </div>
+ <!-- Question 13 -->
+    <div class="question">
+        <h2>Question 13:</h2>
+        <p>Instantiate multiple Car objects and perform actions like accelerating and braking on each.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Car:
+            def __init__(self, make, model, speed=0):
+                self.make = make
+                self.model = model
+                self.speed = speed
+        
+            def accelerate(self, acceleration):
+                self.speed += acceleration
+                print(f"{self.make} {self.model} accelerated to {self.speed} km/h.")
+        
+            def brake(self, deceleration):
+                self.speed -= deceleration
+                if self.speed < 0:
+                    self.speed = 0
+                print(f"{self.make} {self.model} slowed down to {self.speed} km/h.")
+        
+        # Create instances of Car
+        car1 = Car("Toyota", "Camry")
+        car2 = Car("Honda", "Civic")
+        car3 = Car("Ford", "Focus")
+        
+        # Accelerate and brake
+        car1.accelerate(20)
+        car1.brake(10)
+        
+        car2.accelerate(30)
+        car2.brake(15)
+        
+        car3.accelerate(25)
+        car3.brake(12)                    
+            </pre>
+    </div>
+ <!-- Question 14 -->
+    <div class="question">
+        <h2>Question 14:</h2>
+        <p>Develop a script that creates several instances of the Book class and displays their details.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Book:
+            def __init__(self, title, author, genre, price):
+                self.title = title
+                self.author = author
+                self.genre = genre
+                self.price = price
+        
+            def display_details(self):
+                print(f"Title: {self.title}")
+                print(f"Author: {self.author}")
+                print(f"Genre: {self.genre}")
+                print(f"Price: ${self.price:.2f}\n")
+        
+        # Create instances of Book
+        book1 = Book("The Great Gatsby", "F. Scott Fitzgerald", "Classic", 12.99)
+        book2 = Book("To Kill a Mockingbird", "Harper Lee", "Fiction", 9.99)
+        book3 = Book("1984", "George Orwell", "Dystopian", 14.50)
+        
+        # Display book details
+        print("Book 1:")
+        book1.display_details()
+        print("Book 2:")
+        book2.display_details()
+        print("Book 3:")
+        book3.display_details()                           
+            </pre>
+    </div>
+ <!-- Question 15 -->
+    <div class="question">
+        <h2>Question 15:</h2>
+        <p>Create objects of the Triangle class with different dimensions and calculate their areas and perimeters.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Triangle:
+            def __init__(self, side1, side2, side3):
+                self.side1 = side1
+                self.side2 = side2
+                self.side3 = side3
+        
+            def calculate_area(self):
+                # Using Heron's formula to calculate the area
+                s = (self.side1 + self.side2 + self.side3) / 2
+                area = (s * (s - self.side1) * (s - self.side2) * (s - self.side3)) ** 0.5
+                return area
+        
+            def calculate_perimeter(self):
+                return self.side1 + self.side2 + self.side3
+        
+        # Create instances of Triangle with different dimensions
+        triangle1 = Triangle(3, 4, 5)
+        triangle2 = Triangle(5, 12, 13)
+        triangle3 = Triangle(8, 15, 17)
+        
+        # Calculate and display area and perimeter
+        print(f"Triangle 1: Area = {triangle1.calculate_area():.2f}, Perimeter = {triangle1.calculate_perimeter()}")
+        print(f"Triangle 2: Area = {triangle2.calculate_area():.2f}, Perimeter = {triangle2.calculate_perimeter()}")
+        print(f"Triangle 3: Area = {triangle3.calculate_area():.2f}, Perimeter = {triangle3.calculate_perimeter()}")                          
+        </pre>
+    </div>
+ <!-- Question 16 -->
+    <div class="question">
+        <h2>Question 16:</h2>
+        <p>Instantiate multiple BankAccount objects and perform deposit and withdrawal operations.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class BankAccount:
+            def __init__(self, account_number, account_holder, balance=0):
+                self.account_number = account_number
+                self.account_holder = account_holder
+                self.balance = balance
+        
+            def deposit(self, amount):
+                self.balance += amount
+                print(f"Deposited ${amount:.2f}. New balance: ${self.balance:.2f}")
+        
+            def withdraw(self, amount):
+                if self.balance >= amount:
+                    self.balance -= amount
+                    print(f"Withdrew ${amount:.2f}. New balance: ${self.balance:.2f}")
+                else:
+                    print("Insufficient funds. Withdrawal not allowed.")
+        
+        # Create instances of BankAccount
+        account1 = BankAccount("A123", "John Doe", 1000)
+        account2 = BankAccount("B456", "Jane Smith", 500)
+        account3 = BankAccount("C789", "Mike Johnson")
+        
+        # Perform deposit and withdrawal operations
+        account1.deposit(200)
+        account1.withdraw(100)
+        account2.deposit(300)
+        account2.withdraw(600)
+        account3.deposit(1000)
+        account3.withdraw(1500)                     
+        </pre>
+    </div>
+ <!-- Question 17 -->
+    <div class="question">
+        <h2>Question 17:</h2>
+        <p>Create student objects with varying attributes and calculate their GPAs.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Student:
+            def __init__(self, student_id, first_name, last_name, courses):
+                self.student_id = student_id
+                self.first_name = first_name
+                self.last_name = last_name
+                self.courses = courses
+        
+            def calculate_gpa(self):
+                total_credits = 0
+                total_grade_points = 0
+        
+                for course in self.courses:
+                    credits = course["credits"]
+                    grade = course["grade"]
+        
+                    if grade == "A":
+                        grade_points = 4.0
+                    elif grade == "B":
+                        grade_points = 3.0
+                    elif grade == "C":
+                        grade_points = 2.0
+                    elif grade == "D":
+                        grade_points = 1.0
+                    else:
+                        grade_points = 0.0
+        
+                    total_credits += credits
+                    total_grade_points += credits * grade_points
+        
+                if total_credits == 0:
+                    return 0.0
+                else:
+                    return total_grade_points / total_credits
+        
+        # Example student data
+        courses1 = [
+            {"course_name": "Math", "credits": 3, "grade": "A"},
+            {"course_name": "History", "credits": 4, "grade": "B"},
+            {"course_name": "English", "credits": 3, "grade": "A"},
+        ]
+        
+        courses2 = [
+            {"course_name": "Physics", "credits": 4, "grade": "B"},
+            {"course_name": "Chemistry", "credits": 3, "grade": "C"},
+            {"course_name": "Biology", "credits": 3, "grade": "A"},
+        ]
+        
+        # Create student instances
+        student1 = Student(101, "John", "Doe", courses1)
+        student2 = Student(102, "Jane", "Smith", courses2)
+        
+        # Calculate and display GPAs
+        print(f"{student1.first_name} {student1.last_name}'s GPA: {student1.calculate_gpa():.2f}")
+        print(f"{student2.first_name} {student2.last_name}'s GPA: {student2.calculate_gpa():.2f}")                                
+        </pre>
+    </div>
+ <!-- Question 18 -->
+    <div class="question">
+        <h2>Question 18:</h2>
+        <p>Create instances of the Circle class with different radii and calculate their circumferences.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Circle:
+            def __init__(self, radius):
+                self.radius = radius
+        
+            def calculate_circumference(self):
+                return 2 * 3.14159 * self.radius
+        
+        # Create instances of Circle with different radii
+        circle1 = Circle(5)
+        circle2 = Circle(7)
+        circle3 = Circle(10)
+        
+        # Calculate and display circumferences
+        print(f"Circle 1 (radius {circle1.radius}): Circumference = {circle1.calculate_circumference():.2f}")
+        print(f"Circle 2 (radius {circle2.radius}): Circumference = {circle2.calculate_circumference():.2f}")
+        print(f"Circle 3 (radius {circle3.radius}): Circumference = {circle3.calculate_circumference():.2f}")                        
+        </pre>
+    </div>
+ <!-- Question 19 -->
+    <div class="question">
+        <h2>Question 19:</h2>
+        <p>Instantiate objects of the Time class with different times and perform addition and subtraction operations.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Time:
+            def __init__(self, hours, minutes):
+                self.hours = hours
+                self.minutes = minutes
+        
+            def __str__(self):
+                return f"{self.hours:02d}:{self.minutes:02d}"
+        
+            def add(self, other_time):
+                total_minutes = self.hours * 60 + self.minutes + other_time.hours * 60 + other_time.minutes
+                new_hours, new_minutes = divmod(total_minutes, 60)
+                return Time(new_hours, new_minutes)
+        
+            def subtract(self, other_time):
+                total_minutes = self.hours * 60 + self.minutes - (other_time.hours * 60 + other_time.minutes)
+                new_hours, new_minutes = divmod(total_minutes, 60)
+                return Time(new_hours, new_minutes)
+        
+        # Example usage
+        time1 = Time(9, 30)
+        time2 = Time(3, 45)
+        
+        # Add times
+        sum_time = time1.add(time2)
+        print(f"Sum of {time1} and {time2} = {sum_time}")
+        
+        # Subtract times
+        diff_time = time1.subtract(time2)
+        print(f"Difference between {time1} and {time2} = {diff_time}")                              
+        </pre>
+    </div>
+ <!-- Question 20 -->
+    <div class="question">
+        <h2>Question 20:</h2>
+        <p>Generate invoices for different customers and display their details.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Invoice:
+            def __init__(self, invoice_number, customer_name, total_amount):
+                self.invoice_number = invoice_number
+                self.customer_name = customer_name
+                self.total_amount = total_amount
+        
+            def display_invoice(self):
+                print(f"Invoice Number: {self.invoice_number}")
+                print(f"Customer Name: {self.customer_name}")
+                print(f"Total Amount: ${self.total_amount:.2f}")
+        
+        # Create instances of Invoice
+        invoice1 = Invoice("INV123", "John Doe", 1000)
+        invoice2 = Invoice("INV456", "Jane Smith", 750)
+        invoice3 = Invoice("INV789", "Mike Johnson", 1200)
+        
+        # Display invoice details
+        print("Invoice 1:")
+        invoice1.display_invoice()
+        print("\nInvoice 2:")
+        invoice2.display_invoice()
+        print("\nInvoice 3:")
+        invoice3.display_invoice()                                 
+        </pre>
+    </div>
+    <!-- Question 21 -->
+    <div class="question">
+        <h2>Question 21:</h2>
+        <p>Define an abstract class Shape with abstract methods area() and perimeter(). Implement concrete classes Rectangle and Circle inheriting from Shape and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            from abc import ABC, abstractmethod
+            import math
+            
+            class Shape(ABC):
+                @abstractmethod
+                def area(self):
+                    pass
+            
+                @abstractmethod
+                def perimeter(self):
+                    pass
+            
+            class Rectangle(Shape):
+                def __init__(self, length, width):
+                    self.length = length
+                    self.width = width
+            
+                def area(self):
+                    return self.length * self.width
+            
+                def perimeter(self):
+                    return 2 * (self.length + self.width)
+            
+            class Circle(Shape):
+                def __init__(self, radius):
+                    self.radius = radius
+            
+                def area(self):
+                    return math.pi * self.radius ** 2
+            
+                def perimeter(self):
+                    return 2 * math.pi * self.radius
+            
+            # Example usage
+            rectangle = Rectangle(5, 3)
+            circle = Circle(4)
+            
+            print(f"Rectangle Area: {rectangle.area()}")
+            print(f"Rectangle Perimeter: {rectangle.perimeter()}")
+            
+            print(f"Circle Area: {circle.area()}")
+            print(f"Circle Perimeter: {circle.perimeter()}")                        
+            </pre>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question">
+        <h2>Question 22:</h2>
+        <p>Create an abstract class Animal with abstract methods speak() and move(). Implement concrete classes Dog and Bird inheriting from Animal and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            from abc import ABC, abstractmethod
+
+            class Animal(ABC):
+                @abstractmethod
+                def speak(self):
+                    pass
+            
+                @abstractmethod
+                def move(self):
+                    pass
+            
+            class Dog(Animal):
+                def speak(self):
+                    return "Woof!"
+            
+                def move(self):
+                    return "Running"
+            
+            class Bird(Animal):
+                def speak(self):
+                    return "Chirp!"
+            
+                def move(self):
+                    return "Flying"
+            
+            # Example usage
+            dog = Dog()
+            bird = Bird()
+            
+            print(f"Dog says: {dog.speak()}, and it is {dog.move()}.")
+            print(f"Bird says: {bird.speak()}, and it is {bird.move()}.")                               
+            </pre>
+    </div>
+ <!-- Question 23 -->
+    <div class="question">
+        <h2>Question 23:</h2>
+        <p>Define an abstract class Vehicle with abstract methods start() and stop(). Implement concrete classes Car and Motorcycle inheriting from Vehicle and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            from abc import ABC, abstractmethod
+
+            class Vehicle(ABC):
+                @abstractmethod
+                def start(self):
+                    pass
+            
+                @abstractmethod
+                def stop(self):
+                    pass
+            
+            class Car(Vehicle):
+                def start(self):
+                    return "Car engine started."
+            
+                def stop(self):
+                    return "Car engine stopped."
+            
+            class Motorcycle(Vehicle):
+                def start(self):
+                    return "Motorcycle engine started."
+            
+                def stop(self):
+                    return "Motorcycle engine stopped."
+            
+            # Example usage
+            car = Car()
+            motorcycle = Motorcycle()
+            
+            print(car.start())
+            print(car.stop())
+            
+            print(motorcycle.start())
+            print(motorcycle.stop())                         
+            </pre>
+    </div>
+ <!-- Question 24 -->
+    <div class="question">
+        <h2>Question 24:</h2>
+        <p>Implement an abstract class Bank with abstract methods open_account() and close_account(). Create concrete classes SavingsAccount and CheckingAccount inheriting from Bank and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            from abc import ABC, abstractmethod
+
+            class Bank(ABC):
+                @abstractmethod
+                def open_account(self):
+                    pass
+            
+                @abstractmethod
+                def close_account(self):
+                    pass
+            
+            class SavingsAccount(Bank):
+                def open_account(self):
+                    return "Savings account opened successfully."
+            
+                def close_account(self):
+                    return "Savings account closed successfully."
+            
+            class CheckingAccount(Bank):
+                def open_account(self):
+                    return "Checking account opened successfully."
+            
+                def close_account(self):
+                    return "Checking account closed successfully."
+            
+            # Example usage
+            savings = SavingsAccount()
+            checking = CheckingAccount()
+            
+            print(savings.open_account())
+            print(savings.close_account())
+            
+            print(checking.open_account())
+            print(checking.close_account())            
+    </div>
+ <!-- Question 25 -->
+    <div class="question">
+        <h2>Question 25:</h2>
+        <p>Create an abstract class Shape with abstract methods area() and perimeter(). Implement concrete classes Square and Triangle inheriting from Shape and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            from abc import ABC, abstractmethod
+
+            class Shape(ABC):
+                @abstractmethod
+                def area(self):
+                    pass
+            
+                @abstractmethod
+                def perimeter(self):
+                    pass
+            
+            class Square(Shape):
+                def __init__(self, side):
+                    self.side = side
+            
+                def area(self):
+                    return self.side ** 2
+            
+                def perimeter(self):
+                    return 4 * self.side
+            
+            class Triangle(Shape):
+                def __init__(self, base, height, side1, side2, side3):
+                    self.base = base
+                    self.height = height
+                    self.side1 = side1
+                    self.side2 = side2
+                    self.side3 = side3
+            
+                def area(self):
+                    return 0.5 * self.base * self.height
+            
+                def perimeter(self):
+                    return self.side1 + self.side2 + self.side3
+            
+            # Example usage
+            square = Square(5)
+            triangle = Triangle(base=6, height=8, side1=3, side2=4, side3=5)
+            
+            print(f"Square Area: {square.area()}")
+            print(f"Square Perimeter: {square.perimeter()}")
+            
+            print(f"Triangle Area: {triangle.area()}")
+            print(f"Triangle Perimeter: {triangle.perimeter()}")                                 
+            </pre>
+    </div>
+ <!-- Question 26 -->
+    <div class="question">
+        <h2>Question 26:</h2>
+        <p>Define an abstract class Animal with abstract methods eat() and sleep(). Implement concrete classes Cat and Bird inheriting from Animal and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            from abc import ABC, abstractmethod
+
+            class Animal(ABC):
+                @abstractmethod
+                def eat(self):
+                    pass
+            
+                @abstractmethod
+                def sleep(self):
+                    pass
+            
+            class Cat(Animal):
+                def eat(self):
+                    return "Cat is eating."
+            
+                def sleep(self):
+                    return "Cat is sleeping."
+            
+            class Bird(Animal):
+                def eat(self):
+                    return "Bird is pecking at seeds."
+            
+                def sleep(self):
+                    return "Bird is perched and resting."
+            
+            # Example usage
+            cat = Cat()
+            bird = Bird()
+            
+            print(cat.eat())
+            print(cat.sleep())
+            
+            print(bird.eat())
+            print(bird.sleep())                                       
+            </pre>
+    </div>
+ <!-- Question 27 -->
+    <div class="question">
+        <h2>Question 27:</h2>
+        <p>Design an abstract class Transport with abstract methods start() and stop(). Implement concrete classes Car and Bike inheriting from Transport and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            abstract class Transport {
+                public abstract void start();
+                public abstract void stop();
+            }
+            
+            class Car extends Transport {
+                @Override
+                public void start() {
+                    System.out.println("Car engine started.");
+                }
+            
+                @Override
+                public void stop() {
+                    System.out.println("Car engine stopped.");
+                }
+            }
+            
+            class Bike extends Transport {
+                @Override
+                public void start() {
+                    System.out.println("Bike engine started.");
+                }
+            
+                @Override
+                public void stop() {
+                    System.out.println("Bike engine stopped.");
+                }
+            }
+            
+            // Example usage
+            public class Main {
+                public static void main(String[] args) {
+                    Transport car = new Car();
+                    Transport bike = new Bike();
+            
+                    car.start();
+                    car.stop();
+            
+                    bike.start();
+                    bike.stop();
+                }
+            }                       
+            </pre>
+    </div>
+ <!-- Question 28 -->
+    <div class="question">
+        <h2>Question 28:</h2>
+        <p>Create an abstract class Bank with abstract methods deposit() and withdraw(). Implement concrete classes SavingsAccount and CheckingAccount inheriting from Bank and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            abstract class Bank {
+                public abstract void deposit(double amount);
+                public abstract void withdraw(double amount);
+            }
+            
+            class SavingsAccount extends Bank {
+                private double balance;
+            
+                @Override
+                public void deposit(double amount) {
+                    balance += amount;
+                    System.out.println("Deposit of $" + amount + " successful. Current balance: $" + balance);
+                }
+            
+                @Override
+                public void withdraw(double amount) {
+                    if (balance >= amount) {
+                        balance -= amount;
+                        System.out.println("Withdrawal of $" + amount + " successful. Current balance: $" + balance);
+                    } else {
+                        System.out.println("Insufficient funds. Withdrawal failed.");
+                    }
+                }
+            }
+            
+            class CheckingAccount extends Bank {
+                private double balance;
+            
+                @Override
+                public void deposit(double amount) {
+                    balance += amount;
+                    System.out.println("Deposit of $" + amount + " successful. Current balance: $" + balance);
+                }
+            
+                @Override
+                public void withdraw(double amount) {
+                    if (balance >= amount) {
+                        balance -= amount;
+                        System.out.println("Withdrawal of $" + amount + " successful. Current balance: $" + balance);
+                    } else {
+                        System.out.println("Insufficient funds. Withdrawal failed.");
+                    }
+                }
+            }
+            
+            // Example usage
+            public class Main {
+                public static void main(String[] args) {
+                    Bank savings = new SavingsAccount();
+                    Bank checking = new CheckingAccount();
+            
+                    savings.deposit(500);
+                    savings.withdraw(200);
+            
+                    checking.deposit(1000);
+                    checking.withdraw(1500);
+                }
+            }                                 
+        </pre>
+    </div>
+ <!-- Question 29 -->
+    <div class="question">
+        <h2>Question 29:</h2>
+        <p>Define an abstract class Shape with abstract methods area() and perimeter(). Implement concrete classes Circle, Rectangle, and Triangle inheriting from Shape and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            abstract class Shape {
+                public abstract double area();
+                public abstract double perimeter();
+            }
+            
+            class Circle extends Shape {
+                private double radius;
+            
+                public Circle(double radius) {
+                    this.radius = radius;
+                }
+            
+                @Override
+                public double area() {
+                    return Math.PI * radius * radius;
+                }
+            
+                @Override
+                public double perimeter() {
+                    return 2 * Math.PI * radius;
+                }
+            }
+            
+            class Rectangle extends Shape {
+                private double length;
+                private double width;
+            
+                public Rectangle(double length, double width) {
+                    this.length = length;
+                    this.width = width;
+                }
+            
+                @Override
+                public double area() {
+                    return length * width;
+                }
+            
+                @Override
+                public double perimeter() {
+                    return 2 * (length + width);
+                }
+            }
+            
+            class Triangle extends Shape {
+                private double side1;
+                private double side2;
+                private double side3;
+            
+                public Triangle(double side1, double side2, double side3) {
+                    this.side1 = side1;
+                    this.side2 = side2;
+                    this.side3 = side3;
+                }
+            
+                @Override
+                public double area() {
+                    // Using Heron's formula
+                    double s = (side1 + side2 + side3) / 2;
+                    return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+                }
+            
+                @Override
+                public double perimeter() {
+                    return side1 + side2 + side3;
+                }
+            }
+            
+            // Example usage
+            public class Main {
+                public static void main(String[] args) {
+                    Circle circle = new Circle(5);
+                    Rectangle rectangle = new Rectangle(4, 6);
+                    Triangle triangle = new Triangle(3, 4, 5);
+            
+                    System.out.println("Circle Area: " + circle.area());
+                    System.out.println("Circle Perimeter: " + circle.perimeter());
+            
+                    System.out.println("Rectangle Area: " + rectangle.area());
+                    System.out.println("Rectangle Perimeter: " + rectangle.perimeter());
+            
+                    System.out.println("Triangle Area: " + triangle.area());
+                    System.out.println("Triangle Perimeter: " + triangle.perimeter());
+                }
+            }                                
+        </pre>
+    </div>
+ <!-- Question 30 -->
+    <div class="question">
+        <h2>Question 30:</h2>
+        <p>Develop an abstract class Animal with abstract methods eat() and sleep(). Implement concrete classes Dog, Cat, and Bird inheriting from Animal and provide implementations for the abstract methods.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            abstract class Animal {
+                public abstract void eat();
+                public abstract void sleep();
+            }
+            
+            class Dog extends Animal {
+                @Override
+                public void eat() {
+                    System.out.println("Dog is eating.");
+                }
+            
+                @Override
+                public void sleep() {
+                    System.out.println("Dog is sleeping.");
+                }
+            }
+            
+            class Cat extends Animal {
+                @Override
+                public void eat() {
+                    System.out.println("Cat is eating.");
+                }
+            
+                @Override
+                public void sleep() {
+                    System.out.println("Cat is sleeping.");
+                }
+            }
+            
+            class Bird extends Animal {
+                @Override
+                public void eat() {
+                    System.out.println("Bird is pecking at seeds.");
+                }
+            
+                @Override
+                public void sleep() {
+                    System.out.println("Bird is perched and resting.");
+                }
+            }
+            
+            // Example usage
+            public class Main {
+                public static void main(String[] args) {
+                    Dog dog = new Dog();
+                    Cat cat = new Cat();
+                    Bird bird = new Bird();
+            
+                    dog.eat();
+                    dog.sleep();
+            
+                    cat.eat();
+                    cat.sleep();
+            
+                    bird.eat();
+                    bird.sleep();
+                }
+            }                               
+        </pre>
+    </div>
+ <!-- Question 31 -->
+    <div class="question">
+        <h2>Question 31:</h2>
+        <p>Create a class BankAccount with private attributes balance and account_number. Implement methods to deposit, withdraw, and display balance.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class BankAccount:
+            def __init__(self, account_number, balance=0):
+                self.__account_number = account_number
+                self.__balance = balance
+        
+            def deposit(self, amount):
+                self.__balance += amount
+                print(f"Deposited ${amount:.2f}. New balance: ${self.__balance:.2f}")
+        
+            def withdraw(self, amount):
+                if self.__balance >= amount:
+                    self.__balance -= amount
+                    print(f"Withdrew ${amount:.2f}. New balance: ${self.__balance:.2f}")
+                else:
+                    print("Insufficient balance. Withdrawal not allowed.")
+        
+            def display_balance(self):
+                print(f"Current balance: ${self.__balance:.2f}")
+        
+        # Example usage
+        account = BankAccount(account_number=12345, balance=1000)
+        account.deposit(500)
+        account.withdraw(200)
+        account.display_balance()                    
+            </pre>
+    </div>
+ <!-- Question 32 -->
+    <div class="question">
+        <h2>Question 32:</h2>
+        <p>Define a class Student with private attributes name, age, and grade. Implement methods to set and get these attributes.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Student:
+            def __init__(self, name, age, grade):
+                self.__name = name
+                self.__age = age
+                self.__grade = grade
+        
+            def set_name(self, name):
+                self.__name = name
+        
+            def get_name(self):
+                return self.__name
+        
+            def set_age(self, age):
+                if age >= 0:
+                    self.__age = age
+                else:
+                    print("Age cannot be negative.")
+        
+            def get_age(self):
+                return self.__age
+        
+            def set_grade(self, grade):
+                self.__grade = grade
+        
+            def get_grade(self):
+                return self.__grade
+        
+        # Example usage
+        student = Student(name="John", age=15, grade="10th")
+        print(f"Student name: {student.get_name()}, Age: {student.get_age()}, Grade: {student.get_grade()}")
+        student.set_age(-5)  # Trying to set negative age                          
+        </pre>
+    </div>
+ <!-- Question 33 -->
+    <div class="question">
+        <h2>Question 33:</h2>
+        <p>Write a class Person with private attributes name and age. Implement methods to set and get these attributes, ensuring age is not negative.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Person:
+            def __init__(self, name, age):
+                self.__name = name
+                self.__age = age
+        
+            def set_name(self, name):
+                self.__name = name
+        
+            def get_name(self):
+                return self.__name
+        
+            def set_age(self, age):
+                if age >= 0:
+                    self.__age = age
+                else:
+                    print("Age cannot be negative.")
+        
+            def get_age(self):
+                return self.__age
+        
+        # Example usage
+        person = Person(name="Alice", age=30)
+        print(f"Person name: {person.get_name()}, Age: {person.get_age()}")
+        person.set_age(-10)  # Trying to set negative age                      
+            </pre>
+    </div>
+ <!-- Question 34 -->
+    <div class="question">
+        <h2>Question 34:</h2>
+        <p>Implement a class Customer with private attributes customer_id and email. Write methods to set and get these attributes.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Customer:
+            def __init__(self, customer_id, email):
+                self.__customer_id = customer_id
+                self.__email = email
+        
+            def set_customer_id(self, customer_id):
+                self.__customer_id = customer_id
+        
+            def get_customer_id(self):
+                return self.__customer_id
+        
+            def set_email(self, email):
+                self.__email = email
+        
+            def get_email(self):
+                return self.__email                                   
+        </pre>
+    </div>
+ <!-- Question 35 -->
+    <div class="question">
+        <h2>Question 35:</h2>
+        <p>Develop a class Employee with private attributes employee_id and salary. Implement methods to set and get these attributes, ensuring salary is not negative.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Employee:
+            def __init__(self, employee_id, salary):
+                self.__employee_id = employee_id
+                self.__salary = max(0, salary)  # Ensure salary is not negative
+        
+            def set_employee_id(self, employee_id):
+                self.__employee_id = employee_id
+        
+            def get_employee_id(self):
+                return self.__employee_id
+        
+            def set_salary(self, salary):
+                self.__salary = max(0, salary)  # Ensure salary is not negative
+        
+            def get_salary(self):
+                return self.__salary                        
+        </pre>
+    </div>
+ <!-- Question 36 -->
+    <div class="question">
+        <h2>Question 36:</h2>
+        <p>Create a class Library with private attributes books and members. Write methods to add and remove books, and to add and remove members.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Library:
+            def __init__(self):
+                self.__books = []
+                self.__members = []
+        
+            def add_book(self, book):
+                self.__books.append(book)
+        
+            def remove_book(self, book):
+                self.__books.remove(book)
+        
+            def add_member(self, member):
+                self.__members.append(member)
+        
+            def remove_member(self, member):
+                self.__members.remove(member)                      
+        </pre>
+    </div>
+ <!-- Question 37 -->
+    <div class="question">
+        <h2>Question 37:</h2>
+        <p>Implement a class Bank with private attributes accounts and transactions. Write methods to add accounts, deposit and withdraw money, and display transactions.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Bank:
+            def __init__(self):
+                self.__accounts = []
+                self.__transactions = []
+        
+            def add_account(self, account):
+                self.__accounts.append(account)
+        
+            def deposit(self, account, amount):
+                account.deposit(amount)
+                self.__transactions.append(f"Deposit: {account.get_account_number()}, Amount: ${amount:.2f}")
+        
+            def withdraw(self, account, amount):
+                account.withdraw(amount)
+                self.__transactions.append(f"Withdrawal: {account.get_account_number()}, Amount: ${amount:.2f}")
+        
+            def display_transactions(self):
+                for transaction in self.__transactions:
+                    print(transaction)                       
+        </pre>
+    </div>
+ <!-- Question 38 -->
+    <div class="question">
+        <h2>Question 38:</h2>
+        <p>Develop a class Product with private attributes product_id, name, and price. Write methods to set and get these attributes.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Product:
+            def __init__(self, product_id, name, price):
+                self.__product_id = product_id
+                self.__name = name
+                self.__price = price
+        
+            def set_product_id(self, product_id):
+                self.__product_id = product_id
+        
+            def get_product_id(self):
+                return self.__product_id
+        
+            def set_name(self, name):
+                self.__name = name
+        
+            def get_name(self):
+                return self.__name
+        
+            def set_price(self, price):
+                self.__price = price
+        
+            def get_price(self):
+                return self.__price                  
+        </pre>
+    </div>
+ <!-- Question 39 -->
+    <div class="question">
+        <h2>Question 39:</h2>
+        <p>Create a class Inventory with private attributes products and stock. Implement methods to add and remove products, and to update stock.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Inventory:
+            def __init__(self):
+                self.__products = []
+                self.__stock = {}
+        
+            def add_product(self, product):
+                self.__products.append(product)
+        
+            def remove_product(self, product):
+                self.__products.remove(product)
+        
+            def update_stock(self, product, stock):
+                self.__stock[product] = stock                     
+        </pre>
+    </div>
+ <!-- Question 40 -->
+    <div class="question">
+        <h2>Question 40:</h2>
+        <p>Define a class Hospital with private attributes patients and doctors. Write methods to add and remove patients and doctors, ensuring patient and doctor IDs are unique.</p>
+    </div>
+    <div class="answer">
+        <pre>
+            class Hospital:
+            def __init__(self):
+                self.__patients = {}
+                self.__doctors = {}
+        
+            def add_patient(self, patient_id, patient_name):
+                self.__patients[patient_id] = patient_name
+        
+            def remove_patient(self, patient_id):
+                if patient_id in self.__patients:
+                    del self.__patients[patient_id]
+        
+            def add_doctor(self, doctor_id, doctor_name):
+                self.__doctors[doctor_id] = doctor_name
+        
+            def remove_doctor(self, doctor_id):
+                if doctor_id in self.__doctors:
+                    del self.__doctors[doctor_id]                            
+        </pre>
+    </div>
+ <!-- Question 41 -->
+ <div class="question">
+    <h2>Question 41:</h2>
+    <p>Create a base class Animal with a method sound(). Derive classes Dog, Cat, and Cow from Animal and override the sound() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Animal:
+        def sound(self):
+            pass
+    
+    class Dog(Animal):
+        def sound(self):
+            return "Woof!"
+    
+    class Cat(Animal):
+        def sound(self):
+            return "Meow!"
+    
+    class Cow(Animal):
+        def sound(self):
+            return "Moo!"
+    
+    # Example usage
+    dog = Dog()
+    cat = Cat()
+    cow = Cow()
+    
+    print(f"Dog sound: {dog.sound()}")
+    print(f"Cat sound: {cat.sound()}")
+    print(f"Cow sound: {cow.sound()}")                   
+        </pre>
+</div>
+<!-- Question 42 -->
+<div class="question">
+    <h2>Question 42:</h2>
+    <p>Implement a base class Shape with methods to calculate area and perimeter. Create subclasses Rectangle and Circle inheriting from Shape and override the area and perimeter methods accordingly.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Shape:
+        def area(self):
+            pass
+    
+        def perimeter(self):
+            pass
+    
+    class Rectangle(Shape):
+        def __init__(self, length, width):
+            self.length = length
+            self.width = width
+    
+        def area(self):
+            return self.length * self.width
+    
+        def perimeter(self):
+            return 2 * (self.length + self.width)
+    
+    class Circle(Shape):
+        def __init__(self, radius):
+            self.radius = radius
+    
+        def area(self):
+            return 3.14159 * self.radius ** 2
+    
+        def perimeter(self):
+            return 2 * 3.14159 * self.radius
+    
+    # Example usage
+    rectangle = Rectangle(length=5, width=3)
+    circle = Circle(radius=4)
+    
+    print(f"Rectangle Area: {rectangle.area()}")
+    print(f"Rectangle Perimeter: {rectangle.perimeter()}")
+    
+    print(f"Circle Area: {circle.area()}")
+    print(f"Circle Perimeter: {circle.perimeter()}")                      
+    </pre>
+</div>
+<!-- Question 43 -->
+<div class="question">
+    <h2>Question 43:</h2>
+    <p>Define a class Vehicle with attributes make and model. Derive classes Car and Motorcycle from Vehicle and add attributes specific to each type of vehicle.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Vehicle:
+        def __init__(self, make, model):
+            self.make = make
+            self.model = model
+    
+    class Car(Vehicle):
+        def __init__(self, make, model, num_doors):
+            super().__init__(make, model)
+            self.num_doors = num_doors
+    
+    class Motorcycle(Vehicle):
+        def __init__(self, make, model, num_wheels):
+            super().__init__(make, model)
+            self.num_wheels = num_wheels
+    
+    # Example usage
+    car = Car(make="Toyota", model="Camry", num_doors=4)
+    motorcycle = Motorcycle(make="Harley-Davidson", model="Sportster", num_wheels=2)
+    
+    print(f"Car: {car.make} {car.model}, {car.num_doors} doors")
+    print(f"Motorcycle: {motorcycle.make} {motorcycle.model}, {motorcycle.num_wheels} wheels")            
+        </pre>
+</div>
+<!-- Question 44 -->
+<div class="question">
+    <h2>Question 44:</h2>
+    <p>Develop a class Employee with attributes name, age, and salary. Derive classes Manager and Developer from Employee and add attributes specific to each role.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Employee:
+        def __init__(self, name, age, salary):
+            self.name = name
+            self.age = age
+            self.salary = salary
+    
+    class Manager(Employee):
+        def __init__(self, name, age, salary, department):
+            super().__init__(name, age, salary)
+            self.department = department
+    
+    class Developer(Employee):
+        def __init__(self, name, age, salary, programming_language):
+            super().__init__(name, age, salary)
+            self.programming_language = programming_language
+    
+    # Example usage
+    manager = Manager(name="Alice", age=35, salary=80000, department="IT")
+    developer = Developer(name="Bob", age=28, salary=60000, programming_language="Python")
+    
+    print(f"Manager: {manager.name}, Department: {manager.department}")
+    print(f"Developer: {developer.name}, Language: {developer.programming_language}")                            
+    </pre>
+</div>
+<!-- Question 45 -->
+<div class="question">
+    <h2>Question 45:</h2>
+    <p>Create a base class Fruit with attributes color and taste. Derive classes Apple, Banana, and Orange from Fruit and add attributes specific to each fruit.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Fruit:
+        def __init__(self, color, taste):
+            self.color = color
+            self.taste = taste
+    
+    class Apple(Fruit):
+        def __init__(self, color, taste, variety):
+            super().__init__(color, taste)
+            self.variety = variety
+    
+    class Banana(Fruit):
+        def __init__(self, color, taste, curvature):
+            super().__init__(color, taste)
+            self.curvature = curvature
+    
+    class Orange(Fruit):
+        def __init__(self, color, taste, segments):
+            super().__init__(color, taste)
+            self.segments = segments
+    
+    # Example usage
+    apple = Apple(color="red", taste="sweet", variety="Honeycrisp")
+    banana = Banana(color="yellow", taste="creamy", curvature="curved")
+    orange = Orange(color="orange", taste="citrusy", segments=8)
+    
+    print(f"Apple color: {apple.color}, Taste: {apple.taste}, Variety: {apple.variety}")
+    print(f"Banana color: {banana.color}, Taste: {banana.taste}, Curvature: {banana.curvature}")
+    print(f"Orange color: {orange.color}, Taste: {orange.taste}, Segments: {orange.segments}")                
+    </pre>
+</div>
+<!-- Question 46 -->
+<div class="question">
+    <h2>Question 46:</h2>
+    <p>Define a base class Shape with methods to calculate area and perimeter. Create subclasses Square and Triangle inheriting from Shape and override the area and perimeter methods accordingly.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Shape:
+        def area(self):
+            pass
+    
+        def perimeter(self):
+            pass
+    
+    class Square(Shape):
+        def __init__(self, side):
+            self.side = side
+    
+        def area(self):
+            return self.side ** 2
+    
+        def perimeter(self):
+            return 4 * self.side
+    
+    class Triangle(Shape):
+        def __init__(self, base, height, side1, side2, side3):
+            self.base = base
+            self.height = height
+            self.side1 = side1
+            self.side2 = side2
+            self.side3 = side3
+    
+        def area(self):
+            return 0.5 * self.base * self.height
+    
+        def perimeter(self):
+            return self.side1 + self.side2 + self.side3
+    
+    # Example usage
+    square = Square(side=5)
+    triangle = Triangle(base=6, height=8, side1=3, side2=4, side3=5)
+    
+    print(f"Square Area: {square.area()}")
+    print(f"Square Perimeter: {square.perimeter()}")
+    
+    print(f"Triangle Area: {triangle.area()}")
+    print(f"Triangle Perimeter: {triangle.perimeter()}")               
+    </pre>
+</div>
+<!-- Question 47 -->
+<div class="question">
+    <h2>Question 47:</h2>
+    <p>Construct a class Person with attributes name and age. Derive classes Student and Teacher from Person and add attributes specific to each role.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Person:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+    
+    class Student(Person):
+        def __init__(self, name, age, student_id):
+            super().__init__(name, age)
+            self.student_id = student_id
+    
+    class Teacher(Person):
+        def __init__(self, name, age, subject):
+            super().__init__(name, age)
+            self.subject = subject
+    
+    # Example usage
+    student = Student(name="Alice", age=18, student_id="S12345")
+    teacher = Teacher(name="Mr. Smith", age=40, subject="Math")
+    
+    print(f"Student: {student.name}, ID: {student.student_id}")
+    print(f"Teacher: {teacher.name}, Subject: {teacher.subject}")                
+    </pre>
+</div>
+<!-- Question 48 -->
+<div class="question">
+    <h2>Question 48:</h2>
+    <p>Implement a base class Vehicle with methods to start and stop. Create subclasses Car and Bike inheriting from Vehicle and override the start and stop methods accordingly.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Vehicle:
+        def start(self):
+            print("Vehicle started.")
+    
+        def stop(self):
+            print("Vehicle stopped.")
+    
+    class Car(Vehicle):
+        def start(self):
+            print("Car engine started.")
+    
+        def stop(self):
+            print("Car engine stopped.")
+    
+    class Bike(Vehicle):
+        def start(self):
+            print("Bike engine started.")
+    
+        def stop(self):
+            print("Bike engine stopped.")
+    
+    # Example usage
+    car = Car()
+    bike = Bike()
+    
+    car.start()
+    car.stop()
+    
+    bike.start()
+    bike.stop()          
+    </pre>
+</div>
+<!-- Question 49 -->
+<div class="question">
+    <h2>Question 49:</h2>
+    <p>Develop a class Animal with attributes name and age. Derive classes Dog, Cat, and Bird from Animal and add attributes specific to each animal.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Animal:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+    
+    class Dog(Animal):
+        def __init__(self, name, age, breed):
+            super().__init__(name, age)
+            self.breed = breed
+    
+    class Cat(Animal):
+        def __init__(self, name, age, color):
+            super().__init__(name, age)
+            self.color = color
+    
+    class Bird(Animal):
+        def __init__(self, name, age, species):
+            super().__init__(name, age)
+            self.species = species
+    
+    # Example usage
+    dog = Dog(name="Buddy", age=3, breed="Golden Retriever")
+    cat = Cat(name="Whiskers", age=5, color="Gray")
+    bird = Bird(name="Tweety", age=2, species="Canary")
+    
+    print(f"Dog name: {dog.name}, Age: {dog.age}, Breed: {dog.breed}")
+    print(f"Cat name: {cat.name}, Age: {cat.age}, Color: {cat.color}")
+    print(f"Bird name: {bird.name}, Age: {bird.age}, Species: {bird.species}")                    
+    </pre>
+</div>
+<!-- Question 50 -->
+<div class="question">
+    <h2>Question 50:</h2>
+    <p>Create a base class Shape with methods to calculate area and perimeter. Create subclasses Rectangle, Circle, and Triangle inheriting from Shape and override the area and perimeter methods accordingly.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Shape:
+        def area(self):
+            pass
+    
+        def perimeter(self):
+            pass
+    
+    class Rectangle(Shape):
+        def __init__(self, length, width):
+            self.length = length
+            self.width = width
+    
+        def area(self):
+            return self.length * self.width
+    
+        def perimeter(self):
+            return 2 * (self.length + self.width)
+    
+    class Circle(Shape):
+        def __init__(self, radius):
+            self.radius = radius
+    
+        def area(self):
+            return 3.14159 * self.radius ** 2
+    
+        def perimeter(self):
+            return 2 * 3.14159 * self.radius
+    
+    class Triangle(Shape):
+        def __init__(self, base, height, side1, side2, side3):
+            self.base = base
+            self.height = height
+            self.side1 = side1
+            self.side2 = side2
+            self.side3 = side3
+    
+        def area(self):
+            return 0.5 * self.base * self.height
+    
+        def perimeter(self):
+            return self.side1 + self.side2 + self.side3
+    
+    # Example usage
+    rectangle = Rectangle(length=5, width=3)
+    circle = Circle(radius=4)
+    triangle = Triangle(base=6, height=8, side1=3, side2=4, side3=5)
+    
+    print(f"Rectangle Area: {rectangle.area()}")
+    print(f"Rectangle Perimeter: {rectangle.perimeter()}")
+    
+    print(f"Circle Area: {circle.area()}")
+    print(f"Circle Perimeter: {circle.perimeter()}")
+    
+    print(f"Triangle Area: {triangle.area()}")
+    print(f"Triangle Perimeter: {triangle.perimeter()}")                        
+    </pre>
+     <!-- Question 51 -->
+ <div class="question">
+    <h2>Question 51:</h2>
+    <p>Create a class Shape with a method area(). Derive classes Rectangle and Circle from Shape and override the area() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Shape:
+        def area(self):
+            pass
+    
+    class Rectangle(Shape):
+        def __init__(self, length, width):
+            self.length = length
+            self.width = width
+    
+        def area(self):
+            return self.length * self.width
+    
+    class Circle(Shape):
+        def __init__(self, radius):
+            self.radius = radius
+    
+        def area(self):
+            return 3.14159 * self.radius ** 2
+    
+    # Example usage
+    rectangle = Rectangle(length=5, width=3)
+    circle = Circle(radius=4)
+    
+    print(f"Rectangle Area: {rectangle.area()}")
+    print(f"Circle Area: {circle.area()}")                    
+        </pre>
+</div>
+<!-- Question 52 -->
+<div class="question">
+    <h2>Question 52:</h2>
+    <p>Define a base class Operation with methods add() and subtract(). Derive classes Addition and Subtraction from Operation and override the methods for each operation.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Operation:
+        def add(self, a, b):
+            return a + b
+    
+        def subtract(self, a, b):
+            return a - b
+    
+    class Addition(Operation):
+        def add(self, a, b):
+            return a + b + 10
+    
+    class Subtraction(Operation):
+        def subtract(self, a, b):
+            return a - b - 5
+    
+    # Example usage
+    addition = Addition()
+    subtraction = Subtraction()
+    
+    print(f"Addition result: {addition.add(5, 3)}")
+    print(f"Subtraction result: {subtraction.subtract(10, 4)}")                       
+    </pre>
+</div>
+<!-- Question 53 -->
+<div class="question">
+    <h2>Question 53:</h2>
+    <p>Develop a class Animal with a method speak(). Derive classes Dog, Cat, and Cow from Animal and override the speak() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Animal:
+        def speak(self):
+            pass
+    
+    class Dog(Animal):
+        def speak(self):
+            return "Woof!"
+    
+    class Cat(Animal):
+        def speak(self):
+            return "Meow!"
+    
+    class Cow(Animal):
+        def speak(self):
+            return "Moo!"
+    
+    # Example usage
+    dog = Dog()
+    cat = Cat()
+    cow = Cow()
+    
+    print(f"Dog says: {dog.speak()}")
+    print(f"Cat says: {cat.speak()}")
+    print(f"Cow says: {cow.speak()}")             
+        </pre>
+</div>
+<!-- Question 54 -->
+<div class="question">
+    <h2>Question 54:</h2>
+    <p>Implement a base class Vehicle with a method move(). Derive classes Car and Bikefrom Vehicle and override the move() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Vehicle:
+        def move(self):
+            pass
+    
+    class Car(Vehicle):
+        def move(self):
+            return "Car is moving."
+    
+    class Bike(Vehicle):
+        def move(self):
+            return "Bike is moving."
+    
+    # Example usage
+    car = Car()
+    bike = Bike()
+    
+    print(car.move())
+    print(bike.move())                            
+    </pre>
+</div>
+<!-- Question 55 -->
+<div class="question">
+    <h2>Question 55:</h2>
+    <p>Create a base class Employee with a method calculate_salary(). Derive classes Manager and Developer from Employee and override the calculate_salary() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Employee:
+        def calculate_salary(self):
+            pass
+    
+    class Manager(Employee):
+        def calculate_salary(self):
+            return "Manager's salary calculated."
+    
+    class Developer(Employee):
+        def calculate_salary(self):
+            return "Developer's salary calculated."
+    
+    # Example usage
+    manager = Manager()
+    developer = Developer()
+    
+    print(manager.calculate_salary())
+    print(developer.calculate_salary())                  
+    </pre>
+</div>
+<!-- Question 56 -->
+<div class="question">
+    <h2>Question 56:</h2>
+    <p>Define a class Shape with a method draw(). Derive classes Rectangle, Circle, and Triangle from Shape and override the draw() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Shape:
+        def draw(self):
+            pass
+    
+    class Rectangle(Shape):
+        def draw(self):
+            return "Drawing a rectangle."
+    
+    class Circle(Shape):
+        def draw(self):
+            return "Drawing a circle."
+    
+    class Triangle(Shape):
+        def draw(self):
+            return "Drawing a triangle."
+    
+    # Example usage
+    rectangle = Rectangle()
+    circle = Circle()
+    triangle = Triangle()
+    
+    print(rectangle.draw())
+    print(circle.draw())
+    print(triangle.draw())             
+    </pre>
+</div>
+<!-- Question 57 -->
+<div class="question">
+    <h2>Question 57:</h2>
+    <p>Construct a base class Animal with a method eat(). Derive classes Lion, Rabbit, and Deer from Animal and override the eat() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Animal:
+        def eat(self):
+            pass
+    
+    class Lion(Animal):
+        def eat(self):
+            return "Lion is eating."
+    
+    class Rabbit(Animal):
+        def eat(self):
+            return "Rabbit is eating."
+    
+    class Deer(Animal):
+        def eat(self):
+            return "Deer is eating."
+    
+    # Example usage
+    lion = Lion()
+    rabbit = Rabbit()
+    deer = Deer()
+    
+    print(lion.eat())
+    print(rabbit.eat())
+    print(deer.eat())                 
+    </pre>
+</div>
+<!-- Question 58 -->
+<div class="question">
+    <h2>Question 58:</h2>
+    <p>Develop a class Vehicle with a method accelerate(). Derive classes Car and Bike from Vehicle and override the accelerate() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Vehicle:
+        def accelerate(self):
+            pass
+    
+    class Car(Vehicle):
+        def accelerate(self):
+            return "Car is accelerating."
+    
+    class Bike(Vehicle):
+        def accelerate(self):
+            return "Bike is accelerating."
+    
+    # Example usage
+    car = Car()
+    bike = Bike()
+    
+    print(car.accelerate())
+    print(bike.accelerate())             
+    </pre>
+</div>
+<!-- Question 59 -->
+<div class="question">
+    <h2>Question 59:</h2>
+    <p>Create a base class Shape with a method calculate_area(). Derive classes Square, Rectangle, and Circle from Shape and override the calculate_area() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Shape:
+        def calculate_area(self):
+            pass
+    
+    class Square(Shape):
+        def __init__(self, side):
+            self.side = side
+    
+        def calculate_area(self):
+            return self.side ** 2
+    
+    class Rectangle(Shape):
+        def __init__(self, length, width):
+            self.length = length
+            self.width = width
+    
+        def calculate_area(self):
+            return self.length * self.width
+    
+    class Circle(Shape):
+        def __init__(self, radius):
+            self.radius = radius
+    
+        def calculate_area(self):
+            return 3.14159 * self.radius ** 2
+    
+    # Example usage
+    square = Square(side=5)
+    rectangle = Rectangle(length=4, width=6)
+    circle = Circle(radius=3)
+    
+    print(f"Square Area: {square.calculate_area()}")
+    print(f"Rectangle Area: {rectangle.calculate_area()}")
+    print(f"Circle Area: {circle.calculate_area()}")                   
+    </pre>
+</div>
+<!-- Question 60 -->
+<div class="question">
+    <h2>Question 60:</h2>
+    <p>Define a base class Employee with a method calculate_bonus(). Derive classes Manager and Developer from Employee and override the calculate_bonus() method for each subclass.</p>
+</div>
+<div class="answer">
+    <pre>
+        class Employee:
+        def calculate_bonus(self):
+            pass
+    
+    class Manager(Employee):
+        def calculate_bonus(self):
+            return "Manager's bonus calculated."
+    
+    class Developer(Employee):
+        def calculate_bonus(self):
+            return "Developer's bonus calculated."
+    
+    # Example usage
+    manager = Manager()
+    developer = Developer()
+    
+    print(manager.calculate_bonus())
+    print(developer.calculate_bonus())                       
+    </pre>
+</div>
+    <!-- Repeat the above structure for additional questions and answers -->
+
+</div>
+
+</body>
+</html>
