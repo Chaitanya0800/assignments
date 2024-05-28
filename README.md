@@ -5,7 +5,8 @@ Python Assignment Link - https://chaitanya0800.github.io/assignments/32320673000
 Python Assignment Link - https://chaitanya0800.github.io/assignments/323206730005%20Assignment%202.html \
 Python Assignment Link - https://chaitanya0800.github.io/assignments/323206730005Assignment3.html \
 Python Assignment Link - https://chaitanya0800.github.io/assignments/323206730005Assignment4.html \
-Python Assignment Link - https://chaitanya0800.github.io/assignments/323206730005Assignment5.html
+Python Assignment Link - https://chaitanya0800.github.io/assignments/323206730005Assignment5.html \
+Python Assignment Link - https://chaitanya0800.github.io/assignments/323206730006Assignment6.html
 
 
 
